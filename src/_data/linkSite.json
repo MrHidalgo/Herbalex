@@ -1,0 +1,12 @@
+{
+  "styleLink" : [
+    "./style/fonts.min.css",
+    "./style/common.min.css"
+  ],
+
+  "scriptLink" : [
+    "./vendor/js/jquery-1.11.1.min.js",
+    "./script/language.min.js",
+    "./script/main.min.js"
+  ]
+}

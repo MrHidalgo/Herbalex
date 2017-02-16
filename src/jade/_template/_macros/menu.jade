@@ -1,0 +1,27 @@
+-
+    var menuItem = [
+        "Main",
+        "About us",
+        "F.A.Q.",
+        "Our policies",
+        "Track my order",
+        "Shopping cart",
+        "Contact us"
+    ];
+
+
+.menu
+    -for(var i = 0; i < menuItem.length; i++)
+        a(
+            href="javascript:void(0);"
+            class="menu__btn"
+            data-id= menuItem[i]
+        )!= menuItem[i]
+
+    a(
+        href="javascript:void(0);"
+        title=""
+        class="menu__pointer"
+    )
+        i.menu__pointer-icon
+    .menu__drop

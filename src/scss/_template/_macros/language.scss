@@ -1,0 +1,49 @@
+///
+/// IMPORT FILES
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+@import "../../_variable/sprite";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+
+$f-OS-bold          : return-value(fonts, OS-bold);
+///
+/// MAIN
+///
+.language {
+	position: absolute;
+	right: 315px;
+	top: 25px;
+	height: 60px;
+	width: 80px;
+	text-align: center;
+
+
+	&__btn {
+		display: block;
+		margin-top: 19px;
+	}
+
+
+	&__flags {
+		@include retina-sprite($sp-i-flags-usa-group);
+		margin-right: 5px;
+	}
+
+
+	&__icon {
+		@include retina-sprite($sp-i-arrow-group);
+	}
+
+
+	&__flags,
+	&__icon {
+		display: inline-block;  *display: inline;  *zoom: 1;
+		vertical-align: middle;
+	}
+}

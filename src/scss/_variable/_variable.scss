@@ -1,0 +1,28 @@
+////
+/// @group  Variable
+////
+
+///
+/// @name   object
+///
+
+// Proxima Nova --> PN
+
+$object : (
+	color : (
+		white             : #FFF,
+		black             : #000,
+		atlantis          : #8DC63F,
+		very-light-grey   : #CCC,
+		coral-red         : #FB4646,
+	),
+
+	fonts : (
+		OS-regular        : "opensans_regular",
+		OS-bold           : "opensans_bold",
+	),
+
+	dimension : (
+		all       : 100%
+	),
+);

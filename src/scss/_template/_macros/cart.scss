@@ -1,0 +1,87 @@
+///
+/// IMPORT FILES
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+@import "../../_variable/sprite";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-coral-red        : return-value(color, coral-red);
+
+$f-OS-bold          : return-value(fonts, OS-bold);
+///
+/// MAIN
+///
+.cart {
+	position: absolute;
+	right: 15px;
+	top: 25px;
+	width: 220px;
+	height: 60px;
+	cursor: pointer;
+
+
+	&__shadow {
+		position: absolute;
+		left: -7px;
+		top: 0;
+		@include retina-sprite($sp-i-shadow-menu-right-group);
+	}
+
+
+	&__icon {
+		position: absolute;
+		left: 0;
+		top: 10px;
+		@include retina-sprite($sp-i-cart-group);
+	}
+
+
+	&__row {
+		padding-left: 60px;
+		margin-top: 12px;
+		color: $c-white;
+	}
+
+
+	&__title {
+		font-size: 14px;
+	}
+
+
+	&__sum {
+		font-family: $f-OS-bold;
+		margin-right: 10px;
+		cursor: pointer;
+	}
+
+
+	&__item {
+		font: {
+			size: 12px;
+			family: $f-OS-bold;
+		}
+		color: $c-coral-red;
+		padding: 3px 6px;
+		background-color: $c-white;
+		border-radius: 100px;
+	}
+
+
+	&__sum,
+	&__item {
+		display: inline-block;  *display: inline;  *zoom: 1;
+		vertical-align: middle;
+	}
+
+
+	&__title,
+	&__sum,
+	&__item {
+		line-height: 1;
+	}
+}

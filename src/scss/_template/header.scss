@@ -1,0 +1,52 @@
+///
+/// IMPORT FILES
+///
+@import "../_mixin/mixin";
+@import "../_function/function";
+
+@import "_macros/header__top";
+@import "_macros/header__bottom";
+@import "_macros/support";
+@import "_macros/menu";
+@import "_macros/logotype";
+@import "_macros/cart";
+@import "_macros/currency";
+@import "_macros/language";
+@import "_macros/search";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-black			      : return-value(color, black);
+$c-atlantis 	      : return-value(color, atlantis);
+///
+/// MAIN
+///
+.header {
+	position: relative;
+	height: 85px;
+
+
+	&__theme {
+		&_top {
+			height: 25px;
+			background-color: $c-black;
+		}
+
+
+		&_middle {
+			top: 25px;
+			height: 60px;
+			background-color: $c-atlantis;
+		}
+
+
+		&_top,
+		&_middle {
+			position: absolute;
+			width: $w-all;
+		}
+	}
+}

@@ -1,0 +1,64 @@
+///
+/// IMPORT FILES
+///
+@import "../../_mixin/mixin";
+@import "../../_function/function";
+@import "../../_variable/sprite";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-very-light-grey  : return-value(color, very-light-grey);
+///
+/// MAIN
+///
+.search {
+	position: absolute;
+	left: 185px;
+	top: 25px;
+	width: 580px;
+	height: 60px;
+	padding-left: 20px;
+	@include respond-to(large) {
+		width: 340px;
+	}
+
+
+	&__input {
+		position: absolute;
+		top: 11px;
+		padding: 0 36px 0 20px;
+		@include mixinDimensions((580 - 56) * 1px, 38px);
+		border-radius: 3px;
+		border: none;
+		font: {
+			style: italic;
+			size: 14px;
+		}
+		@include respond-to(large) {
+			width: (340 - 56) * 1px;
+		}
+	}
+
+
+	&__btn {
+		position: absolute;
+		top: 11px;
+		right: 0;
+		@include mixinDimensions(36px, 38px);
+		text-align: center;
+
+
+		&-icon {
+			display: inline-block;  *display: inline;  *zoom: 1;
+			margin-top: 11px;
+			@include retina-sprite($sp-i-search-group);
+		}
+	}
+}
+input.search__input::-webkit-input-placeholder {color: $c-very-light-grey;}
+input.search__input::-moz-placeholder {color: $c-very-light-grey;}
+input.search__input:-moz-placeholder {color: $c-very-light-grey;}
+input.search__input::placeholder {color: $c-very-light-grey;}

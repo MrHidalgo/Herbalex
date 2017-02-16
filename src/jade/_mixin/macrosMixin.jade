@@ -1,0 +1,10 @@
+//- BTN
+mixin btn(className, classNameModify, textName)
+    a(
+        href="javascript:void(0);"
+        title=""
+        class="btn " + className + " " + classNameModify
+    )
+        span.btn__text!= textName
+        span.btn__icon-wrap
+            i.btn__icon
