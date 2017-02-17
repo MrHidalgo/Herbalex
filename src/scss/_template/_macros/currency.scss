@@ -20,8 +20,11 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 	right: 235px;
 	top: 25px;
 	height: 60px;
-	width: 80px;
+	width: 85px;
 	text-align: center;
+	@include respond-to(small-max) {
+		right: 15px;
+	}
 
 
 	&__btn {
@@ -34,6 +37,7 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 		font-family: $f-OS-bold;
 		color: $c-white;
 		margin-right: 5px;
+		font-size: 15px;
 	}
 
 
@@ -41,5 +45,18 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 		display: inline-block;  *display: inline;  *zoom: 1;
 		vertical-align: middle;
 		@include retina-sprite($sp-i-arrow-group);
+	}
+
+
+	&__drop {
+		top: 50px;
+
+
+		&-item {
+			font: {
+				size: 13px;
+				family: $f-OS-bold;
+			}
+		}
 	}
 }

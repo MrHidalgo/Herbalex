@@ -1,11 +1,40 @@
+-
+    var languageDropLink = [
+        "English",
+        "Deutsch",
+        "Français",
+        "Italiano",
+        "Español",
+        "Portuguesa",
+        "日本語"
+    ];
+    var languageDataAttr = [
+        "en",
+        "de",
+        "fr",
+        "it",
+        "es",
+        "pt",
+        "jp"
+    ];
+
 
 .language
     a(
-    href="javascript:void(0);"
-    title=""
-    class="language__btn"
+        href="javascript:void(0);"
+        title=""
+        data-language="en"
+        class="language__btn"
     )
         span.language__flags
         i.language__icon
 
-    //.language__drop
+    .language__drop.drop-down
+        -for(var i = 0; i < languageDropLink.length; i++)
+            a(
+                href="javascript:void(0);"
+                title=""
+                data-language-btn= languageDataAttr[i]
+                class="language__drop-item drop-down__btn"
+            )!= languageDropLink[i]
+

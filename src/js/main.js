@@ -100,13 +100,12 @@ $(window).load(function() {
 
 $(document).ready(function() {
 
-
     /* BODY CLICK */
     $('body').on('click', function (e) {
-        var className = ".menu__drop, .menu__pointer";
+        var className = ".drop-down, .menu__pointer, .currency__btn, .language__btn";
 
         if (!$(e.target).closest(className).length) {
-            $(".menu__drop").fadeOut(300);
+            $(".drop-down").fadeOut(300);
         }
     });
 
@@ -130,11 +129,36 @@ $(document).ready(function() {
     });
 
 
-    /* MENU POINTER -> AFTER ITEM MENU APPEND IN DROP MENU*/
-    $(".menu__pointer").on("click", function(e) {
+    /* ITEM BTN WITH DROP DOWN BLOCK */
+    $(".menu__pointer, .currency__btn, .language__btn").on("click", function(e) {
         e.preventDefault();
 
-        $(".menu__drop").fadeToggle(300);
+        var dropDownBlock = $(".drop-down");
+
+        if($(this).siblings(".drop-down").is(":visible")) {
+            dropDownBlock.fadeOut(300);
+        } else {
+            dropDownBlock.fadeOut(300);
+            $(this).siblings(".drop-down").fadeToggle(300);
+        }
+    });
+
+
+    /* LANGUAGE */
+    $(".language__drop-item").on("click", function(e) {
+        var btnAttr = $(this).attr("data-language-btn");
+
+        $(".language__btn").attr("data-language", btnAttr);
+        $(this).closest(".drop-down").fadeOut(300);
+    });
+
+
+    /* CURRENCY */
+    $(".currency__drop-item").on("click", function(e) {
+        var btnAttr = $(this).attr("data-currency-btn");
+
+        $(".currency__name").html(btnAttr);
+        $(this).closest(".drop-down").fadeOut(300);
     });
 });
 

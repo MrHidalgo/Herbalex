@@ -17,11 +17,14 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 ///
 .language {
 	position: absolute;
-	right: 315px;
+	right: 320px;
 	top: 25px;
 	height: 60px;
-	width: 80px;
+	width: 60px;
 	text-align: center;
+	@include respond-to(small-max) {
+		right: 100px;
+	}
 
 
 	&__btn {
@@ -31,7 +34,8 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 
 
 	&__flags {
-		@include retina-sprite($sp-i-flags-usa-group);
+		position: relative;
+		top: -1px;
 		margin-right: 5px;
 	}
 
@@ -45,5 +49,34 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 	&__icon {
 		display: inline-block;  *display: inline;  *zoom: 1;
 		vertical-align: middle;
+	}
+
+
+	&__drop {
+		top: 50px;
+
+
+		&-item {
+			font: {
+				size: 13px;
+				family: $f-OS-bold;
+			}
+		}
+	}
+}
+/* LANGUAGE FLAGS */
+@each $className, $iconName in
+			(en, $sp-i-en-group),
+			(de, $sp-i-de-group),
+			(fr, $sp-i-fr-group),
+			(it, $sp-i-it-group),
+			(es, $sp-i-es-group),
+			(pt, $sp-i-pt-group),
+			(jp, $sp-i-jp-group)
+{
+	[data-language=#{$className}] {
+		.language__flags {
+			@include retina-sprite($iconName);
+		}
 	}
 }

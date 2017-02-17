@@ -1,3 +1,17 @@
+-
+    var currencyDropLink = [
+        "$ USD",
+        "€ EUR",
+        "CA$ CAD",
+        "£ GBP",
+        "CHF CHF",
+        "A$ AUD",
+        "円 JPY",
+        "R$ BRL",
+        "$ MXN",
+        "$ NZD"
+    ];
+
 
 .currency
     a(
@@ -5,7 +19,15 @@
         title=""
         class="currency__btn"
     )
-        span.currency__name!= "USD"
+        span.currency__name!= "CHF CHF"
         i.currency__icon
 
-    //.currency__drop
+    .currency__drop.drop-down
+        -for(var i = 0; i < currencyDropLink.length; i++)
+            a(
+                href="javascript:void(0);"
+                title=""
+                data-currency-btn= currencyDropLink[i]
+                class="currency__drop-item drop-down__btn"
+            )!= currencyDropLink[i]
+

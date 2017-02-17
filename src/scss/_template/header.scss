@@ -21,12 +21,20 @@ $w-all              : return-value(dimension, all);
 $c-white			      : return-value(color, white);
 $c-black			      : return-value(color, black);
 $c-atlantis 	      : return-value(color, atlantis);
+$c-feijoa    	      : return-value(color, feijoa);
+$c-solitude  	      : return-value(color, solitude);
 ///
 /// MAIN
 ///
 .header {
 	position: relative;
 	height: 85px;
+	@include respond-to(medium) {
+		height: (85 + 60) * 1px;
+	}
+	@include respond-to(small-max) {
+		height: (85 + 40 + 60) * 1px;
+	}
 
 
 	&__theme {
@@ -36,15 +44,42 @@ $c-atlantis 	      : return-value(color, atlantis);
 		}
 
 
-		&_middle {
+		&_middle-0 {
 			top: 25px;
 			height: 60px;
 			background-color: $c-atlantis;
 		}
 
 
+		&_middle-1 {
+			@include respond-to(small-max) {
+				top: 85px;
+				height: 40px;
+				background-color: $c-atlantis;
+				border-top: 1px solid $c-feijoa;
+			}
+		}
+
+
+		&_bottom {
+			@include respond-to(medium) {
+				top: 85px;
+				height: 60px;
+				background-color: $c-atlantis;
+				border-top: 1px solid $c-feijoa;
+			}
+			@include respond-to(small-max) {
+				top: (25 + 60 + 40) * 1px;
+				height: 60px;
+				background-color: $c-solitude;
+			}
+		}
+
+
 		&_top,
-		&_middle {
+		&_middle-0,
+		&_middle-1,
+		&_bottom {
 			position: absolute;
 			width: $w-all;
 		}

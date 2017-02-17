@@ -24,6 +24,40 @@ $c-very-light-grey  : return-value(color, very-light-grey);
 	@include respond-to(large) {
 		width: 340px;
 	}
+	@include respond-to(medium-max) {
+		left: 0;
+		padding-left: 15px;
+	}
+	@include respond-to(medium) {
+		top: 85px;
+		width: calc(100% - 15px);
+	}
+	@include respond-to(small-max) {
+		width: $w-all;
+		top: (25 + 60 + 40) * 1px;
+	}
+
+
+	&::before {
+		left: 0;
+		@include retina-sprite($sp-i-shadow-menu-left-group);
+	}
+
+
+	&::after {
+		right: 0;
+		@include retina-sprite($sp-i-shadow-menu-right-group);
+	}
+
+
+	&::before,
+	&::after {
+		@include respond-to(small-max) {
+			content: "";
+			position: absolute;
+			top: 0;
+		}
+	}
 
 
 	&__input {
@@ -40,6 +74,12 @@ $c-very-light-grey  : return-value(color, very-light-grey);
 		@include respond-to(large) {
 			width: (340 - 56) * 1px;
 		}
+		@include respond-to(medium-max) {
+			width: calc(100% - 15px);
+		}
+		@include respond-to(small-max) {
+			width: calc(100% - 30px);
+		}
 	}
 
 
@@ -49,6 +89,9 @@ $c-very-light-grey  : return-value(color, very-light-grey);
 		right: 0;
 		@include mixinDimensions(36px, 38px);
 		text-align: center;
+		@include respond-to(small-max) {
+			right: 15px;
+		}
 
 
 		&-icon {

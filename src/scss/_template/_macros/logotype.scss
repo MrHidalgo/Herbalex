@@ -33,5 +33,8 @@ $c-white			      : return-value(color, white);
 		right: -7px;
 		top: 0;
 		@include retina-sprite($sp-i-shadow-menu-left-group);
+		@include respond-to(small-max) {
+			display: none;
+		}
 	}
 }
