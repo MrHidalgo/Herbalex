@@ -1,20 +1,20 @@
 ///
 /// IMPORT FILES
 ///
-@import "../../_mixin/mixin";
-@import "../../_function/function";
+@import "../../../_mixin/mixin";
+@import "../../../_function/function";
 ///
 /// DECLARATION VARIABLE
 ///
 $w-all              : return-value(dimension, all);
 
 $c-white			      : return-value(color, white);
-$c-black			      : return-value(color, black);
+$c-atlantis 	      : return-value(color, atlantis);
 ///
 /// MAIN
 ///
 .header {
-	&__top {
+	&__bottom {
 
 	}
 }

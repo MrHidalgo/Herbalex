@@ -1,0 +1,19 @@
+
+div(class="discount__coupon-done" data-coupon="done")
+    span(class="discount__coupon-text")
+        span
+            strong(
+                class="discount__coupon-text_error"
+                data-id="Now your discount on all products is 5%. "
+            )!= "Now your discount on all products is 5%. "
+        span(
+            data-id="Prices are displayed in the store with discount!"
+        )!= "Prices are displayed in the store with discount!"
+
+    a(
+        href="javascript:void(0);"
+        title=""
+        class="btn discount__coupon-btn coupon-done-js"
+    )
+        span(class="btn__text", data-id="OK")!= "OK"
+        i.btn__icon

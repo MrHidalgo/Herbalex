@@ -145,19 +145,23 @@ $(document).ready(function() {
 
 
     /* LANGUAGE */
-    $(".language__drop-item").on("click", function(e) {
+    $(".language__drop-item").on("click", function() {
         var btnAttr = $(this).attr("data-language-btn");
 
         $(".language__btn").attr("data-language", btnAttr);
+        $(".language__drop-item").removeClass("active");
+        $(this).addClass("active");
         $(this).closest(".drop-down").fadeOut(300);
     });
 
 
     /* CURRENCY */
-    $(".currency__drop-item").on("click", function(e) {
+    $(".currency__drop-item").on("click", function() {
         var btnAttr = $(this).attr("data-currency-btn");
 
         $(".currency__name").html(btnAttr);
+        $(".currency__drop-item").removeClass("active");
+        $(this).addClass("active");
         $(this).closest(".drop-down").fadeOut(300);
     });
 });

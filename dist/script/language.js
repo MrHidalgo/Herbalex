@@ -10,7 +10,29 @@ var lang = {
         "Shopping cart" : "Shopping cart",
         "Contact us" : "Contact us",
 
-        "Shopping cart:" : "Shopping cart:"
+        "Shopping cart:" : "Shopping cart:",
+
+        "All Section" : "All Section",
+
+        "Anti Inflammatory" : "Anti Inflammatory",
+        "Anti Stress" : "Anti Stress",
+        "Baby Care" : "Baby Care",
+        "Cholesterol" : "Cholesterol",
+        "Diabetes" : "Diabetes",
+
+        "Add Discount" : "Add Discount",
+        "Coupone" : "Coupone",
+        "Your" : "Your",
+        "Discount" : "Discount",
+
+        "Enter coupone: " : "Enter coupone: ",
+        "(if you have one) " : "(if you have one)  ",
+        "Apply coupon" : "Apply coupon",
+        "Error! Coupone not valid. Please try again" : "Error! Coupone not valid. Please try again",
+        "Try again" : "Try again",
+        "OK" : "OK",
+        "Now your discount on all products is 5%. " : "Now your discount on all products is 5%. ",
+        "Prices are displayed in the store with discount!" : "Prices are displayed in the store with discount!"
     },
     de : {
         "- 24/7 customer support service" : "- 24/7 Kundenbetreuung",
@@ -23,7 +45,29 @@ var lang = {
         "Shopping cart" : "Warenkorb",
         "Contact us" : "Kontakt",
 
-        "Shopping cart:" : "Warenkorb:"
+        "Shopping cart:" : "Warenkorb:",
+
+        "All Section" : "Alle Sektion",
+
+        "Anti Inflammatory" : "Entzündungshemmende",
+        "Anti Stress" : "Anti-Stress",
+        "Baby Care" : "Säuglingspflege",
+        "Cholesterol" : "Cholesterin",
+        "Diabetes" : "Diabetes",
+
+        "Add Discount" : "Rabatt hinzufügen",
+        "Coupone" : "Gutschein",
+        "Your" : "Ihre",
+        "Discount" : "Rabatt",
+
+        "Enter coupone: " : "Gutschein eingeben: ",
+        "(if you have one) " : "(wenn du eine hast) ",
+        "Apply coupon" : "Übernehmen Coupon",
+        "Error! Coupone not valid. Please try again" : "Fehler! Gutschein nicht gültig. Bitte versuche es erneut",
+        "Try again" : "Erneut versuchen",
+        "OK" : "OK",
+        "Now your discount on all products is 5%. " : "Jetzt ist Ihr Rabatt auf alle Produkte 5%. ",
+        "Prices are displayed in the store with discount!" : "Die Preise werden im Shop mit Rabatt angezeigt!"
     },
     fr : {
         "- 24/7 customer support service" : "- 24/7 service de soutien à la clientèle",
@@ -36,7 +80,29 @@ var lang = {
         "Shopping cart" : "Panier d\'Achat",
         "Contact us" : "Contactez-nous",
 
-        "Shopping cart:" : "Panier d\'Achat:"
+        "Shopping cart:" : "Panier d\'Achat:",
+
+        "All Section" : "Tous les Section",
+
+        "Anti Inflammatory" : "Anti inflammatoire",
+        "Anti Stress" : "Anti stress",
+        "Baby Care" : "Soins bébé",
+        "Cholesterol" : "Cholesterol",
+        "Diabetes" : "Diabete",
+
+        "Add Discount" : "Ajouter une réduction",
+        "Coupone" : "Coupone",
+        "Your" : "Votre",
+        "Discount" : "Remise",
+
+        "Enter coupone: " : "Entrez le coupon: ",
+        "(if you have one) " : "(Si vous en avez un) ",
+        "Apply coupon" : "Appliquer Coupon",
+        "Error! Coupone not valid. Please try again" : "Erreur! Coupon non valide. Veuillez réessayer",
+        "Try again" : "Essayer a nouveau",
+        "OK" : "D'accord",
+        "Now your discount on all products is 5%. " : "Maintenant votre rabais sur tous les produits est de 5%. ",
+        "Prices are displayed in the store with discount!" : "Les prix sont affichés dans le magasin avec remise!"
     },
     it : {
         "- 24/7 customer support service" : "- 24/7 servizio di supporto clienti",
@@ -49,7 +115,29 @@ var lang = {
         "Shopping cart" : "Carrello",
         "Contact us" : "Contattateci",
 
-        "Shopping cart:" : "Carrello:"
+        "Shopping cart:" : "Carrello:",
+
+        "All Section" : "Tutti i Sezione",
+
+        "Anti Inflammatory" : "Antinfiammatorio",
+        "Anti Stress" : "Anti stress",
+        "Baby Care" : "Assistenza ai bambini",
+        "Cholesterol" : "Colesterolo",
+        "Diabetes" : "Diabete",
+
+        "Add Discount" : "Aggiungere Sconto",
+        "Coupone" : "Coupone",
+        "Your" : "Il tuo",
+        "Discount" : "Sconto",
+
+        "Enter coupone: " : "Inserisci coupon: ",
+        "(if you have one) " : "(se ne hai uno) ",
+        "Apply coupon" : "Applicare coupon",
+        "Error! Coupone not valid. Please try again" : "Errore! Coupon non valida. Riprova",
+        "Try again" : "Riprova",
+        "OK" : "OK",
+        "Now your discount on all products is 5%. " : "Ora lo sconto su tutti i prodotti è del 5%. ",
+        "Prices are displayed in the store with discount!" : "I prezzi sono indicati nel negozio con lo sconto!"
     },
     es : {
         "- 24/7 customer support service" : "- 24/7 servicio de soporte al cliente",
@@ -62,7 +150,29 @@ var lang = {
         "Shopping cart" : "Carro de Compra",
         "Contact us" : "Contáctenos",
 
-        "Shopping cart:" : "Carro de Compra:"
+        "Shopping cart:" : "Carro de Compra:",
+
+        "All Section" : "Todos los Sección",
+
+        "Anti Inflammatory" : "Anti inflamatorio",
+        "Anti Stress" : "Anti estrés",
+        "Baby Care" : "Cuidado del bebé",
+        "Cholesterol" : "Colesterol",
+        "Diabetes" : "Diabetes",
+
+        "Add Discount" : "Y descuento",
+        "Coupone" : "Cupón",
+        "Your" : "Tu",
+        "Discount" : "Descuento",
+
+        "Enter coupone: " : "Introduzca cupón: ",
+        "(if you have one) " : "(Si tienes uno) ",
+        "Apply coupon" : "Aplicar cupón",
+        "Error! Coupone not valid. Please try again" : "¡Error! El cupón no es válido. Por favor, inténtelo de nuevo",
+        "Try again" : "Inténtalo de nuevo",
+        "OK" : "DE ACUERDO",
+        "Now your discount on all products is 5%. " : "Ahora su descuento en todos los productos es el 5%. ",
+        "Prices are displayed in the store with discount!" : "Los precios se muestran en la tienda con descuento!"
     },
     pt : {
         "- 24/7 customer support service" : "- 24/7 o serviço de suporte ao cliente",
@@ -75,7 +185,29 @@ var lang = {
         "Shopping cart" : "Carrinho de Compras",
         "Contact us" : "Contacte-nos",
 
-        "Shopping cart:" : "Carrinho de Compras:"
+        "Shopping cart:" : "Carrinho de Compras:",
+
+        "All Section" : "Todos os Secção",
+
+        "Anti Inflammatory" : "Anti inflamatória",
+        "Anti Stress" : "Antiestresse",
+        "Baby Care" : "Cuidados com o bebê",
+        "Cholesterol" : "Colesterol",
+        "Diabetes" : "Diabetes",
+
+        "Add Discount" : "E desconto",
+        "Coupone" : "Cupom",
+        "Your" : "Seu",
+        "Discount" : "Desconto",
+
+        "Enter coupone: " : "Digite o cupom: ",
+        "(if you have one) " : "(Se você tiver um) ",
+        "Apply coupon" : "Aplicar cupom",
+        "Error! Coupone not valid. Please try again" : "Erro! O cupom não é válido. Por favor, tente novamente",
+        "Try again" : "Tenta de novo",
+        "OK" : "ESTÁ BEM",
+        "Now your discount on all products is 5%. " : "Agora, seu desconto em todos os produtos é de 5%. ",
+        "Prices are displayed in the store with discount!" : "Os preços são exibidos na loja com desconto!"
     },
     jp : {
         "- 24/7 customer support service" : "- 24時間365日の顧客サポートサービス",
@@ -88,6 +220,28 @@ var lang = {
         "Shopping cart" : "ショッピングカート",
         "Contact us" : "お問合せ先",
 
-        "Shopping cart:" : "ショッピングカート:"
+        "Shopping cart:" : "ショッピングカート:",
+
+        "All Section" : "すべてのセクション",
+
+        "Anti Inflammatory" : "抗炎症",
+        "Anti Stress" : "抗ストレス",
+        "Baby Care" : "赤ちゃんのケア",
+        "Cholesterol" : "コレステロール",
+        "Diabetes" : "糖尿病",
+
+        "Add Discount" : "そして割引",
+        "Coupone" : "クーポン",
+        "Your" : "きみの",
+        "Discount" : "ディスカウント",
+
+        "Enter coupone: " : "クーポンを入力 ",
+        "(if you have one) " : "（もしあれば） ",
+        "Apply coupon" : "クーポンを適用",
+        "Error! Coupone not valid. Please try again" : "エラー！ クーポンは無効です。 もう一度お試しください",
+        "Try again" : "再試行してください",
+        "OK" : "[OK]",
+        "Now your discount on all products is 5%. " : "今、すべての製品の割引は5％です。",
+        "Prices are displayed in the store with discount!" : "価格は割引で店に表示されます！"
     }
 };

@@ -3,6 +3,7 @@
 ///
 @import "../../_mixin/mixin";
 @import "../../_function/function";
+@import "../../_variable/sprite";
 ///
 /// DECLARATION VARIABLE
 ///
@@ -10,6 +11,38 @@ $w-all              : return-value(dimension, all);
 
 $c-white			      : return-value(color, white);
 $c-black			      : return-value(color, black);
+$c-atlantis 	      : return-value(color, atlantis);
+
+$f-OS-bold          : return-value(fonts, OS-bold);
+///
+/// ROW
+///
+.row {
+	position: relative;
+
+
+	&_main {
+		.row__img_main {
+			position: absolute;
+			z-index: 0;
+			top: 0;
+
+
+			&-left {
+				left: 0;
+			}
+			&-right {
+				right: 0;
+			}
+		}
+	}
+
+
+	&__wrap {
+		position: relative;
+		z-index: 10;
+	}
+}
 ///
 /// DROP DOWN
 ///
@@ -18,14 +51,17 @@ $c-black			      : return-value(color, black);
 	position: absolute;
 	z-index: 20;
 	right: 0;
-	padding: {
-		left: 10px;
-		right: 10px;
-	}
 	background-color: $c-white;
 	text-align: right;
-	border-radius: 3px;
 	box-shadow: 0 0 5px 0 rgba(0,0,0,0.25);
+
+
+	.menu & {
+		padding: {
+			left: 10px;
+			right: 10px;
+		}
+	}
 
 
 	&::before {
@@ -40,13 +76,63 @@ $c-black			      : return-value(color, black);
 		}
 	}
 
-	.menu__btn,
-	&__btn {
-		display: block;
+
+	&__icon {
+		position: absolute;
+		top: 22px;
+		left: 7px;
+
+
+		.active &{
+				@include retina-sprite($sp-i-drop-down-active-group);
+		}
+	}
+
+	.menu__btn {
 		height: 30px;
 		line-height: 30px;
 		color: $c-black;
 		margin-left: 0;
+	}
+
+
+	&__btn {
+		position: relative;
+		height: 50px;
+		line-height: 50px;
+
+
+		&.active {
+			color: $c-atlantis;
+		}
+
+
+		&:hover {
+			color: $c-atlantis;
+			transition: all .3s ease-in-out;
+		}
+
+
+		.language & {
+			text-align: left;
+			padding: {
+				left: 25px;
+				right: 20px;
+			};
+		}
+		.currency & {
+			text-align: center;
+			padding: {
+				left: 15px;
+				right: 15px;
+			};
+		}
+	}
+
+
+	.menu__btn,
+	&__btn {
+		display: block;
 		white-space: nowrap;
 		border-top: 1px solid rgba($c-black, 0.1);
 
@@ -54,5 +140,38 @@ $c-black			      : return-value(color, black);
 		&:first-child {
 			border-top: none;
 		}
+	}
+}
+///
+/// BTN
+///
+.btn {
+	height: 35px;
+	line-height: 30px;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+	background: rgb(247,101,18);
+	background: -moz-linear-gradient(top,  rgba(247,101,18,1) 0%, rgba(226,82,1,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(247,101,18,1) 0%,rgba(226,82,1,1) 100%);
+	background: linear-gradient(to bottom,  rgba(247,101,18,1) 0%,rgba(226,82,1,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f76512', endColorstr='#e25201',GradientType=0 );
+	color: $c-white;
+	font: {
+		family: $f-OS-bold;
+	}
+	text-align: center;
+
+
+	&__icon {
+		position: relative;
+		top: 1px;
+		margin-left: 10px;
+		@include retina-sprite($sp-i-btn-arrow-group);
+	}
+
+
+	&__text,
+	&__icon {
+		display: inline-block;
+		vertical-align: middle;
 	}
 }

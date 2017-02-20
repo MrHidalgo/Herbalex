@@ -28,6 +28,7 @@
                 href="javascript:void(0);"
                 title=""
                 data-currency-btn= currencyDropLink[i]
-                class="currency__drop-item drop-down__btn"
+                class!= (currencyDropLink[i] !== "$ USD") ? "currency__drop-item drop-down__btn" : "currency__drop-item drop-down__btn active"
             )!= currencyDropLink[i]
+                i.drop-down__icon
 

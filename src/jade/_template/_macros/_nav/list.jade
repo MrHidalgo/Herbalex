@@ -1,0 +1,17 @@
+-
+    var navListItem = [
+        "Anti Inflammatory",
+        "Anti Stress",
+        "Baby Care",
+        "Cholesterol",
+        "Diabetes"
+    ];
+
+
+.nav__list
+    -for(var i = 0; i < navListItem.length; i++)
+        a(
+            href="javascript:void(0);", title=""
+            data-id!= navListItem[i]
+            class!= (i < 3) ? "nav__list-item" : "nav__list-item nav__list-item_hide"
+        )!= navListItem[i]

@@ -1,0 +1,190 @@
+///
+/// IMPORT FILES
+///
+@import "../../../_mixin/mixin";
+@import "../../../_function/function";
+@import "../../../_variable/sprite";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-nero 			      : return-value(color, nero);
+$c-solitude 	      : return-value(color, solitude);
+$c-persimmon	      : return-value(color, persimmon);
+$c-atlantis 	      : return-value(color, atlantis);
+///
+/// MAIN
+///
+.discount {
+	cursor: pointer;
+	float: right;
+	padding-left: 15px;
+	@include mixinDimensions(204px, 50px);
+	border-left: 1px solid $c-solitude;
+
+
+	&__row {
+		white-space: nowrap;
+		padding-top: 9px;
+
+
+		&-info {
+			//display: none;
+			.discount__icon {
+				@include retina-sprite($sp-i-discount-info-group);
+			}
+			.discount__text {
+				color: $c-persimmon;
+			}
+		}
+		&-done {
+			display: none;
+			.discount__icon {
+				@include retina-sprite($sp-i-discount-done-group);
+			}
+			.discount__text {
+				color: $c-atlantis;
+				&-num {
+					color: $c-persimmon;
+				}
+			}
+		}
+	}
+
+
+	&__icon {
+		position: relative;
+		top: -1px;
+		display: block;
+		margin-right: 5px;
+	}
+
+
+	&__text {
+		text-transform: uppercase;
+		font: {
+			size: 13px;
+			family: Arial, sans-serif;
+			weight: bold;
+		}
+		line-height: 1;
+
+
+		&-1,
+		&-num {
+			display: inline-block;
+		}
+	}
+
+
+	&__icon,
+	&__text {
+		&-wrap {
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+
+
+	&__coupon {
+		display: none;
+		position: absolute;
+		z-index: 10;
+		right: 0;
+		top: 0;
+		width: (1185 - 170) * 1px;
+		height: 50px;
+		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.21);
+		background-color: $c-white;
+
+
+		&-text {
+			float: left;
+			font: {
+				size: 13px;
+			}
+			padding: {
+				left: 25px;
+				right: 25px;
+			}
+			line-height: 50px;
+
+
+			&_error {
+				color: $c-persimmon;
+			}
+		}
+
+
+		&-btn {
+			float: right;
+			width: 210px;
+			margin: {
+				top: 7px;
+				right: 25px;
+			}
+		}
+
+
+		&-input {
+			margin-top: 5px;
+			@include mixinDimensions((310 - 30) * 1px, 35px);
+			font: {
+				size: 13px;
+			}
+			padding: {
+				left: 15px;
+				right: 15px;
+			};
+			border: {
+				width: 1px;
+				color: rgb(191, 191, 191);
+				style: solid;
+			}
+			background-color: $c-white;
+			box-shadow: inset 0 1px 5px 0 rgba(0, 0, 0, 0.16);
+		}
+
+
+		&-error {
+			.btn {
+				&__icon {
+					@include retina-sprite($sp-i-btn-refresh-group);
+				}
+			}
+		}
+
+
+		&-done,
+		&-error {
+			display: none;
+		}
+
+
+		&-enter,
+		&-done,
+		&-error {
+			text-align: center;
+			height: 50px;
+
+
+			&::after {
+				content: "";
+				position: absolute;
+				right: -20px;
+				top: 15px;
+				border: {
+					width: 10px;
+					style: solid;
+					color: transparent transparent transparent $c-white;
+				}
+			}
+		}
+	}
+}
+input.discount__coupon-input::-webkit-input-placeholder {color: lighten($c-nero, 10%);}
+input.discount__coupon-input::-moz-placeholder {color: lighten($c-nero, 10%);}
+input.discount__coupon-input:-moz-placeholder {color: lighten($c-nero, 10%);}
+input.discount__coupon-input::placeholder {color: lighten($c-nero, 10%);}

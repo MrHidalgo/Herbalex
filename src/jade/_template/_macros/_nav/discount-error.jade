@@ -1,0 +1,19 @@
+
+div(class="discount__coupon-error" data-coupon="error")
+    span(class="discount__coupon-text")
+        span
+            strong(data-id="Enter coupone: ")!= "Enter coupone: "
+        span(data-id="(if you have one) ")!= "(if you have one) "
+        span(
+            class="discount__coupon-text_error"
+            data-id="Error! Coupone not valid. Please try again"
+        )!= "Error! Coupone not valid. Please try again"
+
+    a(
+        href="javascript:void(0);"
+        title=""
+        class="btn discount__coupon-btn coupon-error-js"
+    )
+        span(class="btn__text", data-id="Try again")!= "Try again"
+        i.btn__icon
+

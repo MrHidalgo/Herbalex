@@ -1,0 +1,18 @@
+
+div(class="discount__coupon-enter" data-coupon="enter")
+
+    span(class="discount__coupon-text")
+        span
+            strong(data-id="Enter coupone: ")!= "Enter coupone: "
+        span(data-id="(if you have one)")!= "(if you have one)"
+
+    input(type="text", class="discount__coupon-input" placeholder="Enter your coupon here")
+
+    a(
+        href="javascript:void(0);"
+        title=""
+        class="btn discount__coupon-btn coupon-enter-js"
+    )
+        span(class="btn__text", data-id="Apply coupon")!= "Apply coupon"
+        i.btn__icon
+

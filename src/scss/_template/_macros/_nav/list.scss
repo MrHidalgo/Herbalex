@@ -1,0 +1,42 @@
+///
+/// IMPORT FILES
+///
+@import "../../../_mixin/mixin";
+@import "../../../_function/function";
+@import "../../../_variable/sprite";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-nero			        : return-value(color, nero);
+///
+/// MAIN
+///
+.nav {
+	&__list {
+		float: left;
+		font-size: 0;
+		// 780px
+		width: (1170 - (170 + 220)) * 1px;
+
+
+		&-item {
+			display: inline-block;
+			vertical-align: top;
+			height: 50px;
+			padding: {
+				left: 10px;
+				right: 30px;
+			};
+			line-height: 50px;
+			font: {
+				size: 16px;
+				family: Arial, sans-serif;
+				weight: bold;
+			}
+			color: $c-nero;
+		}
+	}
+}
