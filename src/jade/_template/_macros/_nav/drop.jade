@@ -1,0 +1,105 @@
+-
+    var navDropItem = [
+        "Anti Inflammatory",
+        "Anti Stress",
+        "Baby Care",
+        "Cholesterol",
+        "Diabetes",
+        "Anti Inflammatory",
+        "Anti Stress",
+        "Baby Care",
+        "Cholesterol",
+        "Diabetes",
+        "Anti Inflammatory",
+        "Anti Stress",
+        "Baby Care",
+        "Cholesterol",
+        "Diabetes",
+        "Anti Inflammatory",
+        "Anti Stress",
+        "Baby Care",
+        "Cholesterol",
+        "Diabetes",
+        "Anti Inflammatory",
+        "Anti Stress",
+        "Baby Care",
+        "Cholesterol",
+        "Diabetes",
+        "Anti Inflammatory",
+        "Anti Stress",
+        "Baby Care",
+        "Cholesterol",
+        "Diabetes"
+    ];
+
+
+mixin dropContent(count)
+    -for(var j = 0; j < count; j++)
+        a(
+            href="javascript:void(0);"
+            title=""
+            data-id= navDropItem[j]
+            class="nav__drop-btn product-name-js"
+        )!= navDropItem[j]
+
+
+.nav__drop.clearfix
+    .nav__drop-row
+        .nav__drop-left
+            -for(var i = 0; i < navDropItem.length; i++)
+                a(
+                    href="javascript:void(0);"
+                    title=""
+                    data-num= i
+                    class="nav__drop-btn category-name-js"
+                )
+                    span(class="nav__drop-btn", data-id= navDropItem[i])!= navDropItem[i]
+                    i.nav__drop-btn-icon
+
+
+        .nav__drop-center
+            - for(var k = 0; k < navDropItem.length; k++)
+                div(class!= (k === 0) ? "nav__drop-center-wrap nav__drop-center-" + k + " active" : "nav__drop-center-wrap nav__drop-center-" + k)
+                    - var randomNum = Math.floor(Math.random() * (1 - 20)) + 20;
+                    +dropContent(randomNum)
+
+
+        .nav__drop-right
+            p.promo__text-only!= "<span class='promo__text-only_color'>*</span>Only <span class='promo__text-only_color'>$36.99</span> per bottle"
+
+            p(
+                class="promo__title",
+                data-id="Diarex"
+            )!= "Diarex"
+
+            p(
+                class="promo__text-desc",
+                data-id="The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery"
+            )!= "The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery."
+
+            a(
+                href="javascript:void(0);"
+                title=""
+                class="btn btn_big promo__btn"
+            )
+                span(class="btn__text", data-id="Order Now")!= "Order Now"
+                i.btn__icon
+
+    img(
+        src="./image/img-promo-bg.png"
+        title=""
+        alt=""
+        class="promo__img promo__img-bg"
+    )
+    img(
+        src="./image/img-promo.png"
+        title=""
+        alt=""
+        class="promo__img promo__img-img"
+    )
+    img(
+        src="./image/img-promo-bottle.png"
+        title=""
+        alt=""
+        class="promo__img promo__img-bottle"
+    )

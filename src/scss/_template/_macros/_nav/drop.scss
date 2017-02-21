@@ -1,0 +1,147 @@
+///
+/// IMPORT FILES
+///
+@import "../../../_mixin/mixin";
+@import "../../../_function/function";
+@import "../../../_variable/sprite";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-nero			        : return-value(color, nero);
+$c-solitude 	      : return-value(color, solitude);
+$c-persimmon 	      : return-value(color, persimmon);
+
+$f-OS-bold          : return-value(fonts, OS-bold);
+///
+/// MAIN
+///
+.nav {
+	&__drop {
+		display: none;
+		position: absolute;
+		overflow: hidden;
+		top: 50px;
+		left: 0;
+		background-color: $c-white;
+		border: {
+			width: 1px;
+			style: solid;
+			color: $c-solitude;
+		}
+		@include mixinDimensions(1198px, 460px);
+		@include respond-to(large) {
+			width: 938px;
+		}
+		@include respond-to(medium) {
+			width: 718px;
+		}
+
+
+		&.active {
+			display: block;
+		}
+
+
+		&-row {
+			position: relative;
+			z-index: 15;
+		}
+
+
+		&-left {
+			width: 199px;
+			border-right: 1px solid $c-solitude;
+			max-height: 460px;
+			overflow-y: auto;
+		}
+
+
+		&-center {
+			position: relative;
+			width: 360px;
+			height: 460px;
+			column-width: 160px;
+			column-count: 2;
+			column-fill: auto;
+			column-gap: 0;
+			writing-mode: tb-lr\9;
+			*filter: flipV();
+
+
+			&-wrap {
+				display: none;
+
+				&.active{
+					display: block;
+				}
+			}
+
+
+			.nav__drop-btn {
+				display: inline-block;  *display: inline;  *zoom: 1;
+				color: $c-nero;
+				width: 185px;
+				writing-mode: lr-tb\9;
+				word-spacing: normal\9;
+				*filter:flipH();
+			}
+		}
+
+
+		&-right {
+			float: right;
+			width: 425px;
+			height: 100%;
+			@include respond-to(large) {
+				width:375px;
+			}
+			@include respond-to(medium) {
+				display: none;
+			}
+		}
+
+
+		&-left,
+		&-center {
+			float: left;
+		}
+
+
+		&-btn {
+			position: relative;
+			display: block;
+			font: {
+				size: 13px;
+				family: $f-OS-bold;
+			}
+			color: $c-persimmon;
+			height: 35px;
+			line-height: 33px;
+			padding: {
+				left: 15px;
+				right: 15px;
+			}
+			overflow: hidden;
+			text-overflow: ellipsis;
+
+
+			&:hover {
+				.nav__drop-btn-icon {
+					transition: all .2s ease-in-out;
+					@include retina-sprite($sp-i-drop-arrow-active-group);
+				}
+			}
+
+
+			&-icon {
+				position: absolute;
+				top: 13px;
+				right: 10px;
+				@include retina-sprite($sp-i-drop-arrow-group);
+			}
+		}
+	}
+}

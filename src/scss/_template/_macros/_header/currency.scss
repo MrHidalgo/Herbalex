@@ -25,6 +25,9 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 	@include respond-to(small-max) {
 		right: 15px;
 	}
+	@include respond-to(extra-small) {
+		right: 10px;
+	}
 
 
 	&__btn {

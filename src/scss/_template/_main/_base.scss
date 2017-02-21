@@ -26,6 +26,9 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 			position: absolute;
 			z-index: 0;
 			top: 0;
+			@include respond-to(small-max) {
+				display: none;
+			}
 
 
 			&-left {
@@ -159,6 +162,21 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 		family: $f-OS-bold;
 	}
 	text-align: center;
+
+
+	&_big {
+		height: 45px;
+		line-height: 40px;
+
+
+		.btn__text {
+			font-size: 26px;
+			text-transform: uppercase;
+		}
+		.btn__icon {
+			@include retina-sprite($sp-i-btn-arrow-big-group);
+		}
+	}
 
 
 	&__icon {

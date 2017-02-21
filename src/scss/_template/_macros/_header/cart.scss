@@ -24,9 +24,12 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 	height: 60px;
 	cursor: pointer;
 	@include respond-to(small-max) {
-		left: 0;
+		left: 15px;
 		top: (25 + 60) * 1px;
 		@include mixinDimensions($w-all, 40px);
+	}
+	@include respond-to(extra-small) {
+		left: 0;
 	}
 
 

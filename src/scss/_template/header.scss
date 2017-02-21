@@ -81,6 +81,7 @@ $c-solitude  	      : return-value(color, solitude);
 		&_middle-1,
 		&_bottom {
 			position: absolute;
+			left: 0;
 			width: $w-all;
 		}
 	}

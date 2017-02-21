@@ -20,6 +20,14 @@ $c-nero			        : return-value(color, nero);
 		font-size: 0;
 		// 780px
 		width: (1170 - (170 + 220)) * 1px;
+		@include respond-to(large) {
+			// 520px
+			width: auto;
+		}
+		@include respond-to(medium-max) {
+			display: none;
+		}
+
 
 
 		&-item {
@@ -37,6 +45,16 @@ $c-nero			        : return-value(color, nero);
 				weight: bold;
 			}
 			color: $c-nero;
+			@include respond-to(large) {
+				font-size: 15px;
+			}
+
+
+			&_hide {
+				@include respond-to(large-max) {
+					display: none;
+				}
+			}
 		}
 	}
 }

@@ -14,4 +14,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'helveticaltstd_lightCond';
+  src: url("../fonts/HelveticaLTStd-LightCond.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helveticaltstd_blk';
+  src: url("../fonts/HelveticaLTStd-Blk.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 

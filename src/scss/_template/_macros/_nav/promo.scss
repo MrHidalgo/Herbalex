@@ -1,0 +1,110 @@
+///
+/// IMPORT FILES
+///
+@import "../../../_mixin/mixin";
+@import "../../../_function/function";
+@import "../../../_variable/sprite";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-nero			        : return-value(color, nero);
+$c-surfie-green     : return-value(color, surfie-green);
+$c-pumpkin          : return-value(color, pumpkin);
+$c-woody-brown      : return-value(color, woody-brown);
+
+$f-H-lc             : return-value(fonts, H-lc);
+$f-H-blk            : return-value(fonts, H-blk);
+$f-OS-bold          : return-value(fonts, OS-bold);
+///
+/// MAIN
+///
+.promo {
+
+
+	&__text {
+		&-only {
+			padding-top: 30px;
+			font: {
+				size: 43px;
+				family: $f-H-lc;
+			}
+			color: $c-surfie-green;
+			line-height: 1.2;
+
+
+			&_color {
+				color: $c-pumpkin;
+			}
+		}
+
+
+		&-desc {
+			padding: {
+				left: 15px;
+				right: 150px;
+			}
+			color: $c-woody-brown;
+			font: {
+				size: 14px;
+				family: $f-OS-bold;
+			}
+			line-height: 1.2;
+		}
+	}
+
+
+	&__title {
+		padding-left: 15px;
+		font: {
+			size: 63px;
+			family: $f-H-blk;
+		};
+		color: $c-surfie-green;
+	}
+
+
+	&__btn {
+		display: block;
+		width: 230px;
+		margin: {
+			left: 15px;
+			top: 30px;
+		};
+	}
+
+
+	&__img {
+		@include respond-to(medium-max) {
+			display: none;
+		}
+
+
+		&-bg {
+			right: 0;
+		}
+
+		&-img {
+			right: -50px;
+		}
+
+		&-img,
+		&-bg {
+			bottom: 0;
+		}
+
+		&-bottle {
+			right: -20px;
+			bottom: -30px;
+		}
+
+		&-img,
+		&-bottle,
+		&-bg {
+			position: absolute;
+			z-index: 0;
+		}
+	}
+}

@@ -71,7 +71,8 @@ body{
 		left: 0;
 		height: 100%;
 	}
-
+}
+@media only screen and (max-width: 767px) {
 	* {
 		box-sizing: border-box;
 

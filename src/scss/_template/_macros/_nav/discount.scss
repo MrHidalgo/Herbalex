@@ -23,6 +23,12 @@ $c-atlantis 	      : return-value(color, atlantis);
 	padding-left: 15px;
 	@include mixinDimensions(204px, 50px);
 	border-left: 1px solid $c-solitude;
+	@include respond-to(small-max) {
+		width: 50%;
+	}
+	@include respond-to(extra-small) {
+		padding-left: 10px;
+	}
 
 
 	&__row {
@@ -59,6 +65,9 @@ $c-atlantis 	      : return-value(color, atlantis);
 		top: -1px;
 		display: block;
 		margin-right: 5px;
+		@include respond-to(small-max) {
+			margin-right: 0;
+		}
 	}
 
 
@@ -69,7 +78,10 @@ $c-atlantis 	      : return-value(color, atlantis);
 			family: Arial, sans-serif;
 			weight: bold;
 		}
-		line-height: 1;
+		line-height: 1.2;
+		@include respond-to(extra-small) {
+			font-size: 10px;
+		}
 
 
 		&-1,
@@ -98,6 +110,13 @@ $c-atlantis 	      : return-value(color, atlantis);
 		height: 50px;
 		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.21);
 		background-color: $c-white;
+
+
+		&.enter,
+		&.done,
+		&.error {
+			display: block;
+		}
 
 
 		&-text {
@@ -157,15 +176,31 @@ $c-atlantis 	      : return-value(color, atlantis);
 		}
 
 
-		&-done,
+		&-enter {
+			.enter & {
+				display: block;
+			}
+		}
+
+
+		&-done {
+			.done & {
+				display: block;
+			}
+		}
+
+
 		&-error {
-			display: none;
+			.error & {
+				display: block;
+			}
 		}
 
 
 		&-enter,
 		&-done,
 		&-error {
+			display: none;
 			text-align: center;
 			height: 50px;
 

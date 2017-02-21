@@ -100,16 +100,20 @@ $(window).load(function() {
 
 $(document).ready(function() {
 
+
     /* BODY CLICK */
     $('body').on('click', function (e) {
-        var className = ".drop-down, .menu__pointer, .currency__btn, .language__btn";
+        var className = ".drop-down, .menu__pointer, .currency__btn, .language__btn, .btn-category-js, .nav__drop";
 
         if (!$(e.target).closest(className).length) {
             $(".drop-down").fadeOut(300);
+            $(".btn-category-js").removeClass("active");
+            $(".nav__drop").hide();
         }
     });
 
-    /* GET COOKIE VALUE */
+
+    /* GET COOKIE VALUE LANG */
     var getCookieValue  = getCookieStore("LANG");
 
     if(getCookieValue !== null)
@@ -164,6 +168,44 @@ $(document).ready(function() {
         $(this).addClass("active");
         $(this).closest(".drop-down").fadeOut(300);
     });
+
+
+    /* DISCOUNT */
+    $(".discount__row").on("click", function() {
+        $(".discount__coupon").addClass("enter");
+    });
+    $(".coupon-enter-js").on("click", function() {
+        var inputCouponValue = $(".discount__coupon-input").val();
+
+        if(inputCouponValue !== "12345") {
+            $(".discount__coupon").removeClass("enter").addClass("error");
+        } else {
+            $(".discount__coupon").removeClass("enter").addClass("done");
+        }
+    });
+    $(".coupon-error-js").on("click", function() {
+        $(".discount__coupon").removeClass("error").addClass("enter");
+    });
+    $(".coupon-done-js").on("click", function() {
+        $(".discount__coupon").hide().removeClass("done");
+        $(".discount__row-info, .discount__row-done").toggle();
+        setCookieStore("DISCOUNT", "done");
+    });
+    var getCookieDiscount = getCookieStore("DISCOUNT");
+
+    if(getCookieDiscount === "done")
+        $(".discount__row-info, .discount__row-done").toggle();
+
+
+    /* CATEGORY */
+    $(".btn-category-js").on("click", function() {
+        $(this).toggleClass("active");
+        $(".nav__drop").toggleClass("active");
+    });
+    $(".category-name-js").on("click", function() {
+        var dataAttrBtn = $(this).attr("data-num");
+
+        $(".nav__drop-center-wrap").hide();
+        $(".nav__drop-center-" + dataAttrBtn).show();
+    });
 });
-
-

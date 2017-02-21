@@ -7,6 +7,8 @@
 
 @import "../_template/_macros/_nav/list";
 @import "../_template/_macros/_nav/discount";
+@import "../_template/_macros/_nav/drop";
+@import "../_template/_macros/_nav/promo";
 ///
 /// DECLARATION VARIABLE
 ///
@@ -27,8 +29,26 @@ $c-persimmon	      : return-value(color, persimmon);
 
 	&__all {
 		float: left;
-		@include mixinDimensions(170px, 50px);
-		line-height: 48px;
+		@include mixinDimensions(170px, 37px);
+		padding-top: 13px;
+		@include respond-to(small-max) {
+			width: 50%;
+		}
+		@include respond-to(extra-small) {
+			padding-left: 15px;
+		}
+
+
+		&.active {
+			.nav__all-icon {
+				@include retina-sprite($sp-i-category-arr-group);
+				width: 16px;
+			}
+			.nav__all-text {
+				color: $c-nero;
+				border-color: $c-nero;
+			}
+		}
 
 
 		&-icon {
@@ -45,6 +65,9 @@ $c-persimmon	      : return-value(color, persimmon);
 			color: $c-persimmon;
 			line-height: 1.2;
 			border-bottom: 2px solid $c-persimmon;
+			@include respond-to(small-max) {
+				font-size: 13px;
+			}
 		}
 
 
