@@ -17,7 +17,7 @@ $c-atlantis 	      : return-value(color, atlantis);
 ///
 /// MAIN
 ///
-.discount {
+.coupon {
 	cursor: pointer;
 	float: right;
 	padding-left: 15px;
@@ -38,19 +38,19 @@ $c-atlantis 	      : return-value(color, atlantis);
 
 		&-info {
 			//display: none;
-			.discount__icon {
+			.coupon__icon {
 				@include retina-sprite($sp-i-discount-info-group);
 			}
-			.discount__text {
+			.coupon__text {
 				color: $c-persimmon;
 			}
 		}
 		&-done {
 			display: none;
-			.discount__icon {
+			.coupon__icon {
 				@include retina-sprite($sp-i-discount-done-group);
 			}
-			.discount__text {
+			.coupon__text {
 				color: $c-atlantis;
 				&-num {
 					color: $c-persimmon;
@@ -100,7 +100,7 @@ $c-atlantis 	      : return-value(color, atlantis);
 	}
 
 
-	&__coupon {
+	&__wrap {
 		display: none;
 		position: absolute;
 		z-index: 10;
@@ -219,7 +219,7 @@ $c-atlantis 	      : return-value(color, atlantis);
 		}
 	}
 }
-input.discount__coupon-input::-webkit-input-placeholder {color: lighten($c-nero, 10%);}
-input.discount__coupon-input::-moz-placeholder {color: lighten($c-nero, 10%);}
-input.discount__coupon-input:-moz-placeholder {color: lighten($c-nero, 10%);}
-input.discount__coupon-input::placeholder {color: lighten($c-nero, 10%);}
+input.coupon__wrap-input::-webkit-input-placeholder {color: lighten($c-nero, 10%);}
+input.coupon__wrap-input::-moz-placeholder {color: lighten($c-nero, 10%);}
+input.coupon__wrap-input:-moz-placeholder {color: lighten($c-nero, 10%);}
+input.coupon__wrap-input::placeholder {color: lighten($c-nero, 10%);}

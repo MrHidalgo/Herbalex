@@ -11,6 +11,15 @@ $w-all              : return-value(dimension, all);
 
 $c-white			      : return-value(color, white);
 $c-coral-red        : return-value(color, coral-red);
+$c-snow             : return-value(color, snow);
+$c-solitude         : return-value(color, solitude);
+$c-nobel            : return-value(color, nobel);
+$c-atlantis         : return-value(color, atlantis);
+$c-solitude         : return-value(color, solitude);
+$c-athens-grey      : return-value(color, athens-grey);
+$c-iris-blue        : return-value(color, iris-blue);
+$c-nero             : return-value(color, nero);
+$c-persimmon        : return-value(color, persimmon);
 
 $f-OS-bold          : return-value(fonts, OS-bold);
 ///
@@ -56,7 +65,10 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 
 
 	&__row {
-		padding-left: 60px;
+		padding: {
+			left: 60px;
+			bottom: 12px;
+		}
 		margin-top: 12px;
 		color: $c-white;
 		@include respond-to(small-max) {
@@ -110,6 +122,227 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 		@include respond-to(small-max) {
 			display: inline-block;
 			vertical-align: middle;
+		}
+	}
+
+
+	&__drop {
+		display: none;
+		position: absolute;
+		width: 340px;
+		min-height: (255 - (255 - (50 + 60)) / 2) * 1px;
+		max-height: 255px;
+		z-index: 20;
+		right: 0;
+		background-color: $c-white;
+		box-shadow: 0 0 5px 0 rgba(0,0,0,0.25);
+
+
+		&::before {
+			content: "";
+			position: absolute;
+			right: 10px;
+			top: -20px;
+			border: {
+				width: 10px;
+				style: solid;
+				color: transparent transparent $c-white transparent;
+			}
+		}
+
+
+		&-info {
+			height: 44px;
+			padding-top: 6px;
+		}
+		&-done {
+			height: 37px;
+			padding-top: 13px;
+
+
+			.cart__drop__text {
+				font-size: 16px;
+				color: $c-persimmon;
+			}
+		}
+		&-enter {
+			height: 39px;
+			padding: {
+				top: 11px;
+				left: 10px;
+				right: 10px;
+			};
+		}
+
+
+		&-info,
+		&-done {
+			display: none;
+		}
+
+
+		&-top {
+			text-align: center;
+			height: 49px;
+			border-bottom: 1px solid $c-solitude;
+			background-color: $c-snow;
+		}
+
+
+		&-middle {
+			min-height: ((255 - (50 + 60)) / 2) * 1px;
+			max-height: (255 - (50 + 60)) * 1px;
+			overflow-y: auto;
+		}
+
+
+		&-bottom {
+			height: 59px;
+			border-top: 1px solid $c-solitude;
+		}
+
+
+		&__text {
+			font: {
+				size: 13px;
+				weight: 700;
+			};
+			color: $c-nobel;
+
+
+			&_color {
+				color: $c-atlantis;
+			}
+		}
+
+
+		&-delete {
+			float: left;
+			margin: {
+				left: 10px;
+				right: 10px;
+			}
+			@include mixinDimensions(36px);
+			text-align: center;
+			box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3),inset 0 2px 0 0 rgba(245, 247, 249, 0.004);
+			background: $c-solitude;
+			background: -moz-linear-gradient(top,  $c-solitude 0%, $c-athens-grey 100%);
+			background: -webkit-linear-gradient(top,  $c-solitude 0%, $c-athens-grey 100%);
+			background: linear-gradient(to bottom,  $c-solitude 0%, $c-athens-grey 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$c-solitude}', endColorstr='#{$c-athens-grey}',GradientType=0 );
+
+
+			&-icon {
+				display: inline-block;
+				margin-top: 11px;
+				@include retina-sprite($sp-i-cart-delete-group);
+			}
+		}
+
+
+		&-view {
+			width: 274px;
+			height: 36px;
+			line-height: 32px;
+			text-transform: uppercase;
+		}
+
+
+		&-delete,
+		&-view {
+			float: left;
+			margin: {
+				top: 11px;
+			};
+		}
+
+
+		&-product {
+			height: 72px;
+			border-top: 1px solid $c-solitude;
+
+
+			&:first-child {
+				height: 72px;
+				border-top: none;
+			}
+		}
+
+
+		&-img {
+			margin-top: 15px;
+
+
+			&-wrap {
+				float: left;
+				@include mixinDimensions(70px, $w-all);
+				text-align: center;
+			}
+		}
+
+
+		&-text {
+			position: relative;
+			padding-left: 70px;
+			height: 100%;
+			font-size: 0;
+
+
+			&-wrap {
+				display: inline-block;  *display: inline;  *zoom: 1;
+				vertical-align: middle;
+			}
+
+
+			&-name {
+				color: $c-iris-blue;
+			}
+
+
+			&-price {
+				color: $c-nero;
+			}
+
+
+			&-name,
+			&-price {
+				font: {
+					size: 13px;
+					family: $f-OS-bold;
+				}
+			}
+		}
+
+
+		&-input {
+			float: left;
+			font-size: 12px;
+			width: (340 - (10 * 2) - (5 * 2) - 125 - 1) * 1px;
+			height: 26px;
+			border-left: 1px solid $c-nobel;
+			border-top: 1px solid $c-nobel;
+			border-bottom: 1px solid $c-nobel;
+			border-right: none;
+			padding: 0 5px;
+		}
+
+
+		&-apply {
+			float: left;
+			@include mixinDimensions(125px, 28px);
+			line-height: 26px;
+			font: {
+				size: 12px;
+				family: $f-OS-bold;
+			};
+
+			.btn__icon {
+				margin-left: 0;
+				@include retina-sprite($sp-i-cart-apply-group);
+			}
+			.btn__text {
+				margin-left: 5px;
+			}
 		}
 	}
 }

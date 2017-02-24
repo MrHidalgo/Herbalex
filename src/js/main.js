@@ -103,12 +103,14 @@ $(document).ready(function() {
 
     /* BODY CLICK */
     $('body').on('click', function (e) {
-        var className = ".drop-down, .menu__pointer, .currency__btn, .language__btn, .btn-category-js, .nav__drop";
+        var className = ".drop-down, .menu__pointer, .currency__btn, " +
+            ".language__btn, .btn-category-js, .nav__drop, .coupon, .cart";
 
         if (!$(e.target).closest(className).length) {
-            $(".drop-down").fadeOut(300);
+            $(".drop-down, .cart__drop").fadeOut(300);
             $(".btn-category-js").removeClass("active");
-            $(".nav__drop").hide();
+            $(".nav__drop").removeClass("active");
+            $(".coupon__wrap").removeClass("enter done error");
         }
     });
 
@@ -138,6 +140,11 @@ $(document).ready(function() {
         e.preventDefault();
 
         var dropDownBlock = $(".drop-down");
+
+        $(".btn-category-js").removeClass("active");
+        $(".nav__drop").removeClass("active");
+        $(".coupon__wrap").removeClass("enter done error");
+        $(".cart__drop").fadeOut(300);
 
         if($(this).siblings(".drop-down").is(":visible")) {
             dropDownBlock.fadeOut(300);
@@ -170,42 +177,60 @@ $(document).ready(function() {
     });
 
 
-    /* DISCOUNT */
-    $(".discount__row").on("click", function() {
-        $(".discount__coupon").addClass("enter");
+    /* COUPON */
+    $(".coupon__row").on("click", function() {
+        $(".coupon__wrap").addClass("enter");
+
+        $(".drop-down, .cart__drop").fadeOut(300);
+        $(".btn-category-js").removeClass("active");
+        $(".nav__drop").removeClass("active");
     });
     $(".coupon-enter-js").on("click", function() {
-        var inputCouponValue = $(".discount__coupon-input").val();
+        var inputCouponValue = $(".coupon__wrap-input").val();
 
         if(inputCouponValue !== "12345") {
-            $(".discount__coupon").removeClass("enter").addClass("error");
+            $(".coupon__wrap").removeClass("enter").addClass("error");
         } else {
-            $(".discount__coupon").removeClass("enter").addClass("done");
+            $(".coupon__wrap").removeClass("enter").addClass("done");
         }
     });
     $(".coupon-error-js").on("click", function() {
-        $(".discount__coupon").removeClass("error").addClass("enter");
+        $(".coupon__wrap").removeClass("error").addClass("enter");
     });
     $(".coupon-done-js").on("click", function() {
-        $(".discount__coupon").hide().removeClass("done");
-        $(".discount__row-info, .discount__row-done").toggle();
+        $(".coupon__wrap").hide().removeClass("done");
+        $(".coupon__row-info, .coupon__row-done").toggle();
         setCookieStore("DISCOUNT", "done");
     });
     var getCookieDiscount = getCookieStore("DISCOUNT");
 
     if(getCookieDiscount === "done")
-        $(".discount__row-info, .discount__row-done").toggle();
+        $(".coupon__row-info, .coupon__row-done").toggle();
 
 
     /* CATEGORY */
     $(".btn-category-js").on("click", function() {
         $(this).toggleClass("active");
         $(".nav__drop").toggleClass("active");
+
+        $(".drop-down, .cart__drop").fadeOut(300);
+        $(".coupon__wrap").removeClass("enter done error");
     });
     $(".category-name-js").on("click", function() {
         var dataAttrBtn = $(this).attr("data-num");
 
         $(".nav__drop-center-wrap").hide();
         $(".nav__drop-center-" + dataAttrBtn).show();
+    });
+
+
+    /* CART */
+    $(".cart__row").on("click", function() {
+        $(".cart__drop").fadeToggle(300);
+
+        $(".drop-down").fadeOut(300);
+        $(".btn-category-js").removeClass("active");
+        $(".nav__drop").removeClass("active");
+        $(".coupon__wrap").removeClass("enter done error");
     });
 });

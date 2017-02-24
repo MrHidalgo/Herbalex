@@ -1,0 +1,26 @@
+
+.coupon
+    .coupon__row.coupon__row-info
+        .coupon__icon-wrap
+            i.coupon__icon
+
+        .coupon__text-wrap
+            p(class="coupon__text coupon__text-0", data-id="Add Discount")!= "Add Discount"
+            p(class="coupon__text coupon__text-1", data-id="Coupone")!= "Coupone"
+
+    .coupon__row.coupon__row-done
+        .coupon__icon-wrap
+            i.coupon__icon
+
+        .coupon__text-wrap
+            p(class="coupon__text coupon__text-0", data-id="Your")!= "Your"
+
+            p(class="coupon__text coupon__text-1", data-id="Discount")!= "Discount"
+            span(class="coupon__text coupon__text-num")!= "- 5%"
+
+
+    .coupon__wrap
+
+        include coupon-enter
+        include coupon-error
+        include coupon-done

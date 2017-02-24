@@ -87,6 +87,12 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 				writing-mode: lr-tb\9;
 				word-spacing: normal\9;
 				*filter:flipH();
+
+
+				&:hover {
+					transition: .2s ease-in-out;
+					color: $c-persimmon;
+				}
 			}
 		}
 
@@ -130,9 +136,15 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 
 			&:hover {
 				.nav__drop-btn-icon {
-					transition: all .2s ease-in-out;
+					transition: .2s ease-in-out;
 					@include retina-sprite($sp-i-drop-arrow-active-group);
 				}
+			}
+
+
+			&:hover {
+				transition: .2s ease-in-out;
+				color: $c-nero;
 			}
 
 

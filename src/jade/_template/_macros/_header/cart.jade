@@ -5,6 +5,29 @@
     i.cart__icon
 
     .cart__row
-        p(class="cart__title", data-id="Shopping cart:")!= "Shopping cart:"
+        p(
+            class="cart__title"
+            data-id="Shopping cart:"
+        )!= "Shopping cart:"
         p.cart__sum!= "USD 11.0567.00"
-        span.cart__item!= "3"
+        span.cart__item!= "9"
+
+
+    .cart__drop
+        .cart__drop-top
+
+            include cart-info
+
+            include cart-done
+
+            include cart-enter
+
+
+        .cart__drop-middle
+            -for(var i = 0; i < 9; i++)
+                include cart-product
+
+
+        .cart__drop-bottom.clearfix
+            include cart-bottom
+

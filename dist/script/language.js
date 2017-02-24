@@ -35,7 +35,11 @@ var lang = {
         "Prices are displayed in the store with discount!" : "Prices are displayed in the store with discount!",
 
         "Diarex" : "Diarex",
-        "The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery" : "The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery"
+        "The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery" : "The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery",
+
+        "Now your discount on all products is 5%." : "Now your discount on all products is 5%.",
+
+        "Your discount is 5%" : "Your discount is 5%"
     },
     de : {
         "- 24/7 customer support service" : "- 24/7 Kundenbetreuung",
@@ -69,11 +73,15 @@ var lang = {
         "Error! Coupone not valid. Please try again" : "Fehler! Gutschein nicht gültig. Bitte versuche es erneut",
         "Try again" : "Erneut versuchen",
         "OK" : "OK",
-        "Now your discount on all products is 5%. " : "Jetzt ist Ihr Rabatt auf alle Produkte 5%. ",
+        "Now your discount on all products is 5%.. " : "Jetzt ist Ihr Rabatt auf alle Produkte 5%. ",
         "Prices are displayed in the store with discount!" : "Die Preise werden im Shop mit Rabatt angezeigt!",
 
         "Diarex" : "Diarex",
-        "The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery" : "Die antibakteriellen und adstringierenden Wirkungen von Diarex regulieren Stuhlgang und sind wirksam bei der Behandlung von Durchfall oder Dysenterie"
+        "The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery" : "Die antibakteriellen und adstringierenden Wirkungen von Diarex regulieren Stuhlgang und sind wirksam bei der Behandlung von Durchfall oder Dysenterie",
+
+        "Now your discount on all products is 5%." : "Jetzt ist Ihr Rabatt auf alle Produkte 5%.",
+
+        "Your discount is 5%" : "Ihr Rabatt beträgt 5%"
     },
     fr : {
         "- 24/7 customer support service" : "- 24/7 service de soutien à la clientèle",
@@ -107,11 +115,15 @@ var lang = {
         "Error! Coupone not valid. Please try again" : "Erreur! Coupon non valide. Veuillez réessayer",
         "Try again" : "Essayer a nouveau",
         "OK" : "D'accord",
-        "Now your discount on all products is 5%. " : "Maintenant votre rabais sur tous les produits est de 5%. ",
+        "Now your discount on all products is 5%.. " : "Maintenant votre rabais sur tous les produits est de 5%. ",
         "Prices are displayed in the store with discount!" : "Les prix sont affichés dans le magasin avec remise!",
 
         "Diarex" : "Diarex",
-        "The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery" : "Les actions antibactériennes et astringentes de Diarex régularisent les mouvements intestinaux et sont efficaces dans la prise en charge de la diarrhée ou de la dysenterie"
+        "The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery" : "Les actions antibactériennes et astringentes de Diarex régularisent les mouvements intestinaux et sont efficaces dans la prise en charge de la diarrhée ou de la dysenterie",
+
+        "Now your discount on all products is 5%." : "Maintenant votre rabais sur tous les produits est de 5%.",
+
+        "Your discount is 5%" : "Votre remise est de 5%"
     },
     it : {
         "- 24/7 customer support service" : "- 24/7 servizio di supporto clienti",
@@ -145,11 +157,15 @@ var lang = {
         "Error! Coupone not valid. Please try again" : "Errore! Coupon non valida. Riprova",
         "Try again" : "Riprova",
         "OK" : "OK",
-        "Now your discount on all products is 5%. " : "Ora lo sconto su tutti i prodotti è del 5%. ",
+        "Now your discount on all products is 5%.. " : "Ora lo sconto su tutti i prodotti è del 5%. ",
         "Prices are displayed in the store with discount!" : "I prezzi sono indicati nel negozio con lo sconto!",
 
         "Diarex" : "Diarex",
-        "The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery" : "Le azioni antibatteriche e astringenti Diarex regolarizzare i movimenti intestinali e sono efficaci nella gestione di diarrea o dissenteria"
+        "The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery" : "Le azioni antibatteriche e astringenti Diarex regolarizzare i movimenti intestinali e sono efficaci nella gestione di diarrea o dissenteria",
+
+        "Now your discount on all products is 5%." : "Ora lo sconto su tutti i prodotti è del 5%.",
+
+        "Your discount is 5%" : "Lo sconto è del 5%"
     },
     es : {
         "- 24/7 customer support service" : "- 24/7 servicio de soporte al cliente",
@@ -183,11 +199,15 @@ var lang = {
         "Error! Coupone not valid. Please try again" : "¡Error! El cupón no es válido. Por favor, inténtelo de nuevo",
         "Try again" : "Inténtalo de nuevo",
         "OK" : "DE ACUERDO",
-        "Now your discount on all products is 5%. " : "Ahora su descuento en todos los productos es el 5%. ",
+        "Now your discount on all products is 5%.. " : "Ahora su descuento en todos los productos es el 5%. ",
         "Prices are displayed in the store with discount!" : "Los precios se muestran en la tienda con descuento!",
 
         "Diarex" : "Diarex",
-        "The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery" : "Las acciones antibacterianas y astringentes de Diarex regularizan los movimientos intestinales y son eficaces en el manejo de la diarrea o disentería"
+        "The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery" : "Las acciones antibacterianas y astringentes de Diarex regularizan los movimientos intestinales y son eficaces en el manejo de la diarrea o disentería",
+
+        "Now your discount on all products is 5%." : "Ahora su descuento en todos los productos es el 5%.",
+
+        "Your discount is 5%" : "Su descuento es 5%"
     },
     pt : {
         "- 24/7 customer support service" : "- 24/7 o serviço de suporte ao cliente",
@@ -221,11 +241,15 @@ var lang = {
         "Error! Coupone not valid. Please try again" : "Erro! O cupom não é válido. Por favor, tente novamente",
         "Try again" : "Tenta de novo",
         "OK" : "ESTÁ BEM",
-        "Now your discount on all products is 5%. " : "Agora, seu desconto em todos os produtos é de 5%. ",
+        "Now your discount on all products is 5%.. " : "Agora, seu desconto em todos os produtos é de 5%. ",
         "Prices are displayed in the store with discount!" : "Os preços são exibidos na loja com desconto!",
 
         "Diarex" : "Diarex",
-        "The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery" : "As ações antibacterianas e adstringentes do Diarex regularizam os movimentos intestinais e são eficazes no manejo da diarréia ou disenteria"
+        "The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery" : "As ações antibacterianas e adstringentes do Diarex regularizam os movimentos intestinais e são eficazes no manejo da diarréia ou disenteria",
+
+        "Now your discount on all products is 5%." : "Agora, seu desconto em todos os produtos é de 5%.",
+
+        "Your discount is 5%" : "O seu desconto é de 5%"
     },
     jp : {
         "- 24/7 customer support service" : "- 24時間365日の顧客サポートサービス",
@@ -263,6 +287,10 @@ var lang = {
         "Prices are displayed in the store with discount!" : "価格は割引で店に表示されます！",
 
         "Diarex" : "ディアレックス",
-        "The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery" : "Diarexの抗菌作用と収斂作用は排便を調整し、下痢や赤痢の管理に効果的です"
+        "The antibacterial and astringent actions of Diarex regularize bowel movements and are effective in the management of diarrhea or dysentery" : "Diarexの抗菌作用と収斂作用は排便を調整し、下痢や赤痢の管理に効果的です",
+
+        "Now your discount on all products is 5%." : "今、すべての製品の割引は5％です。",
+
+        "Your discount is 5%" : "あなたの割引は5％です"
     }
 };

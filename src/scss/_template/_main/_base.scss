@@ -193,3 +193,11 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 		vertical-align: middle;
 	}
 }
+///
+/// ALIGNER
+///
+.aligner {
+	display: inline-block;  *display: inline;  *zoom: 1;
+	height: 100%;
+	vertical-align: middle;
+}

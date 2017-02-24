@@ -11,8 +11,11 @@ html(lang="en")
     body(data-lang="en")
 
 
+        //- HEADER [support, menu, search, logotype, language, currency, cart]
         include ./_template/header
 
+
+        //- ROW MAIN [background-image]
         .row.row_main
             img(
                 src="./image/img-bg-left.png"
@@ -27,8 +30,12 @@ html(lang="en")
                 class="row__img row__img_main row__img_main-right"
             )
 
+
+            //- MAIN CONTENT IN PAGE
             .row__wrap
 
+
+                //- NAVIGATION [list, drop, coupon]
                 include ./_template/nav
 
 
