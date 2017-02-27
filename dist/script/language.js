@@ -39,7 +39,14 @@ var lang = {
 
         "Your discount is 5%" : "Your discount is 5%",
 
-        "Select pack" : "Select pack"
+        "Select pack" : "Select pack",
+
+        "10 years WorldWide Supplier" : "10 years WorldWide Supplier",
+        "Free Insurance Delivery" : "Free Insurance Delivery",
+        "24/7/365 Support Team" : "24/7/365 Support Team",
+        "Top quality medications" : "Top quality medications",
+        "100% Security ssl-encrypted" : "100% Security ssl-encrypted",
+        "Click here" : "Click here"
     },
     de : {
         "- 24/7 customer support service" : "- 24/7 Kundenbetreuung",
@@ -81,7 +88,14 @@ var lang = {
 
         "Your discount is 5%" : "Ihr Rabatt beträgt 5%",
 
-        "Select pack" : "Paket auswählen"
+        "Select pack" : "Paket auswählen",
+
+        "10 years WorldWide Supplier" : "10 Jahre WorldWide Lieferant",
+        "Free Insurance Delivery" : "Kostenlose Versicherung Lieferung",
+        "24/7/365 Support Team" : "24/7/365 Unterstützung Team",
+        "Top quality medications" : "Hochwertige Medikamente",
+        "100% Security ssl-encrypted" : "100% Sicherheit ssl-verschlüsselt",
+        "Click here" : "Klick hier"
     },
     fr : {
         "- 24/7 customer support service" : "- 24/7 service de soutien à la clientèle",
@@ -123,7 +137,14 @@ var lang = {
 
         "Your discount is 5%" : "Votre remise est de 5%",
 
-        "Select pack" : "Sélectionner le pack"
+        "Select pack" : "Sélectionner le pack",
+
+        "10 years WorldWide Supplier" : "10 ans fournisseur mondial",
+        "Free Insurance Delivery" : "Livraison gratuite d'assurance",
+        "24/7/365 Support Team" : "Équipe de support 24/7/365",
+        "Top quality medications" : "Des médicaments de qualité supérieure",
+        "100% Security ssl-encrypted" : "100% Sécurité ssl-encrypted",
+        "Click here" : "Cliquez ici"
     },
     it : {
         "- 24/7 customer support service" : "- 24/7 servizio di supporto clienti",
@@ -165,7 +186,14 @@ var lang = {
 
         "Your discount is 5%" : "Lo sconto è del 5%",
 
-        "Select pack" : "Seleziona pacchetto"
+        "Select pack" : "Seleziona pacchetto",
+
+        "10 years WorldWide Supplier" : "10 anni fornitore a livello mondiale",
+        "Free Insurance Delivery" : "Consegna di Assicurazione",
+        "24/7/365 Support Team" : "Team di supporto 24/7/365",
+        "Top quality medications" : "farmaci di alta qualità",
+        "100% Security ssl-encrypted" : "100% di sicurezza SSL-encrypted",
+        "Click here" : "Clicca qui"
     },
     es : {
         "- 24/7 customer support service" : "- 24/7 servicio de soporte al cliente",
@@ -207,7 +235,14 @@ var lang = {
 
         "Your discount is 5%" : "Su descuento es 5%",
 
-        "Select pack" : "Seleccionar paquete"
+        "Select pack" : "Seleccionar paquete",
+
+        "10 years WorldWide Supplier" : "10 años proveedor mundial",
+        "Free Insurance Delivery" : "Entrega Gratuita de Seguros",
+        "24/7/365 Support Team" : "Equipo de Apoyo 24/7/365",
+        "Top quality medications" : "Medicamentos de alta calidad",
+        "100% Security ssl-encrypted" : "100% Seguridad ssl-cifrada",
+        "Click here" : "Haga clic aquí"
     },
     pt : {
         "- 24/7 customer support service" : "- 24/7 o serviço de suporte ao cliente",
@@ -249,7 +284,14 @@ var lang = {
 
         "Your discount is 5%" : "O seu desconto é de 5%",
 
-        "Select pack" : "Selecionar pacote"
+        "Select pack" : "Selecionar pacote",
+
+        "10 years WorldWide Supplier" : "10 anos Fornecedor Mundial",
+        "Free Insurance Delivery" : "Entrega Gratuita de Seguros",
+        "24/7/365 Support Team" : "Equipe de suporte 24/7/365",
+        "Top quality medications" : "Medicamentos de alta qualidade",
+        "100% Security ssl-encrypted" : "100% Segurança ssl-criptografada",
+        "Click here" : "Clique aqui"
     },
     jp : {
         "- 24/7 customer support service" : "- 24時間365日の顧客サポートサービス",
@@ -293,6 +335,13 @@ var lang = {
 
         "Your discount is 5%" : "あなたの割引は5％です",
 
-        "Select pack" : "セレクトパック"
+        "Select pack" : "セレクトパック",
+
+        "10 years WorldWide Supplier" : "10年間ワールドワイドサプライヤー",
+        "Free Insurance Delivery" : "無料保険デリバリー",
+        "24/7/365 Support Team" : "24/7/365サポートチーム",
+        "Top quality medications" : "最高品質の薬",
+        "100% Security ssl-encrypted" : "100％セキュリティSSL暗号化",
+        "Click here" : "ここをクリック"
     }
 };

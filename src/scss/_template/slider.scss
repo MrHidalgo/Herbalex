@@ -1,0 +1,151 @@
+///
+/// IMPORT FILES
+///
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-solitude 	      : return-value(color, solitude);
+$c-atlantis 	      : return-value(color, atlantis);
+$c-snow      	      : return-value(color, snow);
+
+$f-OS-bold          : return-value(fonts, OS-bold);
+///
+/// MAIN
+///
+.slider {
+	padding: {
+		top: 20px;
+		bottom: 20px;
+	}
+
+
+	&__row {
+		height: 260px;
+		background-color: $c-white;
+		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.21);
+	}
+
+
+	&__left,
+	&__right {
+		position: relative;
+		float: left;
+		height: $w-all;
+	}
+
+
+	&__left {
+		width: (1170 - 230) * 1px;
+	}
+
+
+	&__right {
+		width: 230px;
+	}
+
+
+	&__info {
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include mixinDimensions($w-all);
+		cursor: pointer;
+
+
+		&--border {
+			height: (260 - 6 - 4) * 1px;
+			border: 2px solid $c-solitude;
+			margin: 3px;
+		}
+
+
+		&--img {
+			margin: {
+				top: 3px;
+				left: 3px;
+			};
+		}
+
+
+		&--btn {
+			position: absolute;
+			bottom: 10px;
+			left: 0;
+			width: $w-all;
+			font: {
+				size: 16px;
+				family: $f-OS-bold;
+			};
+			text-align: center;
+			text-transform: uppercase;
+			color: $c-atlantis;
+		}
+
+
+		&-body {
+			display: none;
+			background-color: $c-atlantis;
+
+
+			.slider__info--border {
+				border: 2px solid rgba($c-snow, .5);
+				padding: {
+					left: 15px;
+					right: 15px;
+				};
+			}
+		}
+
+
+		&--item {
+			padding: {
+				top: 7px;
+				bottom: 7px;
+			}
+			border-top: 1px solid rgba($c-snow, .5);
+
+
+			&:first-child {
+				border-top: 0;
+			}
+		}
+
+
+		&--img {
+			&-wrap {
+				float: left;
+				width: 30px;
+			}
+		}
+
+
+		&--text {
+			position: relative;
+			padding-left: 35px;
+			font: {
+				size: 13px;
+				family: $f-OS-bold;
+			};
+			color: $c-white;
+		}
+	}
+}
+@each $className, $iconName in
+					("0", $sp-i-slider-info-0-group),
+					("1", $sp-i-slider-info-1-group),
+					("2", $sp-i-slider-info-2-group),
+					("3", $sp-i-slider-info-3-group),
+					("4", $sp-i-slider-info-4-group)
+{
+	.slider__info--img-#{$className} {
+		display: inline-block;  *display: inline;  *zoom: 1;
+		margin-top: 7px;
+		@include retina-sprite($iconName);
+	}
+}

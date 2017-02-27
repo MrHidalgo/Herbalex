@@ -119,13 +119,15 @@ $(document).ready(function() {
     /* BODY CLICK */
     $('body').on('click', function (e) {
         var className = ".drop-down, .menu__pointer, .currency__btn, " +
-            ".language__btn, .btn-category-js, .nav__drop, .coupon, .cart, .search";
+            ".language__btn, .btn-category-js, .nav__drop, .coupon, .cart, " +
+            ".search, .slider__right";
 
         if (!$(e.target).closest(className).length) {
-            $(".search__drop, .drop-down, .cart__drop").fadeOut(300);
+            $(".slider__info-body, .search__drop, .drop-down, .cart__drop").fadeOut(300);
             $(".search, .nav__drop, .btn-category-js").removeClass("active");
             $(".coupon__wrap").removeClass("enter done error");
             $(".search__btn").removeClass("close");
+            $(".slider__info-face").fadeIn(500);
         }
     });
 
@@ -257,5 +259,12 @@ $(document).ready(function() {
         $(".cart__drop, .drop-down").fadeOut(300);
         $(".nav__drop, .btn-category-js").removeClass("active");
         $(".coupon__wrap").removeClass("enter done error");
+    });
+
+
+    /* SLIDER INFO */
+    $(".slider__info-face").on("click", function () {
+       $(this).fadeOut(300);
+       $(".slider__info-body").fadeIn(500);
     });
 });
