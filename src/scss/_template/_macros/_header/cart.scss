@@ -317,7 +317,7 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 		&-input {
 			float: left;
 			font-size: 12px;
-			width: (340 - (10 * 2) - (5 * 2) - 125 - 1) * 1px;
+			width: (340 - (10 * 2) - (5 * 2) - 155 - 1) * 1px;
 			height: 26px;
 			border-left: 1px solid $c-nobel;
 			border-top: 1px solid $c-nobel;
@@ -329,7 +329,7 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 
 		&-apply {
 			float: left;
-			@include mixinDimensions(125px, 28px);
+			@include mixinDimensions(155px, 28px);
 			line-height: 26px;
 			font: {
 				size: 12px;

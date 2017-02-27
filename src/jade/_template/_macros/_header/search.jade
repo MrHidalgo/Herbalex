@@ -1,4 +1,9 @@
-
+-
+    var searchList = [
+        "Shuddha Guggulu",
+        "Shuddha Guggulu Soft",
+        "Shuddha Guggulu Super"
+    ];
 .search
 
     input(
@@ -13,3 +18,66 @@
         class="search__btn"
     )
         i.search__btn-icon
+
+
+    .search__drop
+        p(
+            class="search__drop-title"
+        )!= "Search suggestions"
+
+        ul.search__drop-list
+            -for(var i = 0; i < searchList.length; i++)
+                li.search__drop-list-item!= searchList[i]
+
+
+        .search__drop-wrap
+            - for(var j = 0; j < 9; j++)
+                .search__drop-product
+                    .search__drop-product--top.clearfix
+                        .search__drop-product--img-wrap
+                            img(
+                                src="./image/img-product-1.png"
+                                title=""
+                                alt=""
+                                class="search__drop-product--img"
+                            )
+                        .search__drop-product--info
+                            p(
+                                class="search__drop-product--title"
+                            )!= "Shuddha Guggulu"
+
+                            p(
+                                class="search__drop-product--desc"
+                            )
+                                span(
+                                    class="search__drop-product--desc__color"
+                                )!= "Shuddha Guggulu "
+                                span(
+                                    class="search__drop-product--desc__text"
+                                )!= "is a high-effective herbal preparation which helps to regulate the lipid metabolism and thereby helps in weight management. It modulates lipid profile and helps in reducing cholesterol.."
+
+                                a(
+                                    href="javascript:void(0);"
+                                    title=""
+                                    class="search__drop-product--desc__more"
+                                )!= "Read more"
+
+                    .search__drop-product--bottom.clearfix
+                        p.search__drop-product--price!= "from <span class='search__drop-product--price__color'>EUR 24.00</span> per pill"
+
+                        a(
+                            href="javascript:void(0);"
+                            title=""
+                            class="btn btn_medium search__drop-product--btn"
+                        )
+                            span(class="btn__text", data-id="Select pack")!= "Select pack"
+                            i.btn__icon
+
+
+        p(class="search__drop-info")!= "Products found 20, "
+            a(
+                href="javascript:void(0);"
+                title=""
+                class="search__drop-info_btn"
+            )!= "view all"
+

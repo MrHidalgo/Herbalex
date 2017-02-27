@@ -179,6 +179,11 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 	}
 
 
+	&_medium {
+		width: 195px;
+	}
+
+
 	&__icon {
 		position: relative;
 		top: 1px;

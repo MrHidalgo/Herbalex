@@ -70,6 +70,17 @@ function checkMenuMobile(widthContainer) {
     }
 }
 
+
+function less(nWords, className) {
+
+    $(className).each(function(ind, val) {
+        var lessText = $(this).text().substring(0, nWords).trim();
+
+        $(this).html(lessText + "... ");
+    });
+}
+
+
 /* MENU ELEMENTS SHOW/HIDE*/
 $(window).on("load resize ready scroll", function(){
     var firstCheck          = ($(window).width() > '990' && $(window).width() < '1200'),
@@ -101,16 +112,20 @@ $(window).load(function() {
 $(document).ready(function() {
 
 
+    /* LESS TEXT DESCRIPTION IN */
+    less(150, ".search__drop-product--desc__text");
+
+
     /* BODY CLICK */
     $('body').on('click', function (e) {
         var className = ".drop-down, .menu__pointer, .currency__btn, " +
-            ".language__btn, .btn-category-js, .nav__drop, .coupon, .cart";
+            ".language__btn, .btn-category-js, .nav__drop, .coupon, .cart, .search";
 
         if (!$(e.target).closest(className).length) {
-            $(".drop-down, .cart__drop").fadeOut(300);
-            $(".btn-category-js").removeClass("active");
-            $(".nav__drop").removeClass("active");
+            $(".search__drop, .drop-down, .cart__drop").fadeOut(300);
+            $(".search, .nav__drop, .btn-category-js").removeClass("active");
             $(".coupon__wrap").removeClass("enter done error");
+            $(".search__btn").removeClass("close");
         }
     });
 
@@ -141,10 +156,9 @@ $(document).ready(function() {
 
         var dropDownBlock = $(".drop-down");
 
-        $(".btn-category-js").removeClass("active");
-        $(".nav__drop").removeClass("active");
+        $(".nav__drop, .search, .btn-category-js").removeClass("active");
         $(".coupon__wrap").removeClass("enter done error");
-        $(".cart__drop").fadeOut(300);
+        $(".search__drop, .cart__drop").fadeOut(300);
 
         if($(this).siblings(".drop-down").is(":visible")) {
             dropDownBlock.fadeOut(300);
@@ -181,9 +195,8 @@ $(document).ready(function() {
     $(".coupon__row").on("click", function() {
         $(".coupon__wrap").addClass("enter");
 
-        $(".drop-down, .cart__drop").fadeOut(300);
-        $(".btn-category-js").removeClass("active");
-        $(".nav__drop").removeClass("active");
+        $(".search__drop, .drop-down, .cart__drop").fadeOut(300);
+        $(".search, .nav__drop, .btn-category-js").removeClass("active");
     });
     $(".coupon-enter-js").on("click", function() {
         var inputCouponValue = $(".coupon__wrap-input").val();
@@ -213,7 +226,8 @@ $(document).ready(function() {
         $(this).toggleClass("active");
         $(".nav__drop").toggleClass("active");
 
-        $(".drop-down, .cart__drop").fadeOut(300);
+        $(".search").removeClass("active");
+        $(".search__drop, .drop-down, .cart__drop").fadeOut(300);
         $(".coupon__wrap").removeClass("enter done error");
     });
     $(".category-name-js").on("click", function() {
@@ -228,9 +242,20 @@ $(document).ready(function() {
     $(".cart__row").on("click", function() {
         $(".cart__drop").fadeToggle(300);
 
-        $(".drop-down").fadeOut(300);
-        $(".btn-category-js").removeClass("active");
-        $(".nav__drop").removeClass("active");
+        $(".search__drop, .drop-down").fadeOut(300);
+        $(".search, .nav__drop, .btn-category-js").removeClass("active");
+        $(".coupon__wrap").removeClass("enter done error");
+    });
+
+
+    /* SEARCH */
+    $(".search__btn").on("click", function() {
+        $(this).toggleClass("close");
+        $(".search").toggleClass("active");
+        $(".search__drop").fadeToggle(300);
+
+        $(".cart__drop, .drop-down").fadeOut(300);
+        $(".nav__drop, .btn-category-js").removeClass("active");
         $(".coupon__wrap").removeClass("enter done error");
     });
 });

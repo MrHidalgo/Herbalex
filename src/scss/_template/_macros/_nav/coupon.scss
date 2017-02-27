@@ -37,7 +37,6 @@ $c-atlantis 	      : return-value(color, atlantis);
 
 
 		&-info {
-			//display: none;
 			.coupon__icon {
 				@include retina-sprite($sp-i-discount-info-group);
 			}
@@ -110,6 +109,20 @@ $c-atlantis 	      : return-value(color, atlantis);
 		height: 50px;
 		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.21);
 		background-color: $c-white;
+		@include respond-to(large) {
+			right: 15px;
+			width: 910px;
+		}
+		@include respond-to(medium-max) {
+			height: auto;
+			padding: 15px;
+			text-align: center;
+			right: 15px;
+			width: calc(100% - 30px);
+		}
+		@include respond-to(medium) {
+			width: calc(100% - 60px);
+		}
 
 
 		&.enter,
@@ -129,6 +142,16 @@ $c-atlantis 	      : return-value(color, atlantis);
 				right: 25px;
 			}
 			line-height: 50px;
+			@include respond-to(large-max) {
+				padding: {
+					left: 15px;
+					right: 15px;
+				}
+			}
+			@include respond-to(medium-max) {
+				float: none;
+				line-height: normal;
+			}
 
 
 			&_error {
@@ -143,6 +166,18 @@ $c-atlantis 	      : return-value(color, atlantis);
 			margin: {
 				top: 7px;
 				right: 25px;
+			}
+			@include respond-to(large) {
+				margin-right: 15px;
+			}
+			@include respond-to(medium-max) {
+				float: none;
+				display: block;
+				margin: {
+					top: 15px;
+					left: auto;
+					right: auto;
+				};
 			}
 		}
 
@@ -164,6 +199,17 @@ $c-atlantis 	      : return-value(color, atlantis);
 			}
 			background-color: $c-white;
 			box-shadow: inset 0 1px 5px 0 rgba(0, 0, 0, 0.16);
+			@include respond-to(medium-max) {
+				display: block;
+				margin: {
+					top: 15px;
+					left: auto;
+					right: auto;
+				};
+			}
+			@include respond-to(small-max) {
+				width: 100%;
+			}
 		}
 
 
@@ -177,6 +223,7 @@ $c-atlantis 	      : return-value(color, atlantis);
 
 
 		&-enter {
+			//display: block !important;
 			.enter & {
 				display: block;
 			}
@@ -184,6 +231,7 @@ $c-atlantis 	      : return-value(color, atlantis);
 
 
 		&-done {
+			//display: block !important;
 			.done & {
 				display: block;
 			}
@@ -191,6 +239,7 @@ $c-atlantis 	      : return-value(color, atlantis);
 
 
 		&-error {
+			//display: block !important;
 			.error & {
 				display: block;
 			}
@@ -203,6 +252,14 @@ $c-atlantis 	      : return-value(color, atlantis);
 			display: none;
 			text-align: center;
 			height: 50px;
+			@include respond-to(medium-max) {
+				height: auto;
+
+
+				&::after {
+					display: none;
+				}
+			}
 
 
 			&::after {

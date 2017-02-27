@@ -11,6 +11,12 @@ $w-all              : return-value(dimension, all);
 
 $c-white			      : return-value(color, white);
 $c-very-light-grey  : return-value(color, very-light-grey);
+$c-solitude         : return-value(color, solitude);
+$c-grey             : return-value(color, grey);
+$c-nero             : return-value(color, nero);
+$c-persimmon        : return-value(color, persimmon);
+
+$f-OS-bold          : return-value(fonts, OS-bold);
 ///
 /// MAIN
 ///
@@ -30,7 +36,7 @@ $c-very-light-grey  : return-value(color, very-light-grey);
 	}
 	@include respond-to(medium) {
 		top: 85px;
-		width: calc(100% - 15px);
+		width: calc(100% - 30px);
 	}
 	@include respond-to(small-max) {
 		left: 15px;
@@ -85,6 +91,12 @@ $c-very-light-grey  : return-value(color, very-light-grey);
 		@include respond-to(small-max) {
 			width: calc(100% - 30px);
 		}
+
+
+		.active & {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
 	}
 
 
@@ -103,6 +115,214 @@ $c-very-light-grey  : return-value(color, very-light-grey);
 			display: inline-block;  *display: inline;  *zoom: 1;
 			margin-top: 11px;
 			@include retina-sprite($sp-i-search-group);
+
+
+			.active & {
+				margin-top: 14px;
+				@include retina-sprite($sp-i-search-close-group);
+			}
+		}
+	}
+
+
+	&__drop {
+		display: none;
+		position: absolute;
+		width: 580px;
+		min-height: 50px;
+		z-index: 20;
+		top: 49px;
+		right: 0;
+		background-color: $c-white;
+		box-shadow: 0 0 5px 0 rgba(0,0,0,0.25);
+		@include respond-to(large) {
+			width: 340px;
+		}
+		@include respond-to(medium) {
+			width: calc(100% - 15px);
+		}
+		@include respond-to(small-max) {
+			right: 15px;
+			width: calc(100% - 30px);
+		}
+
+
+		&-title {
+			height: 25px;
+			line-height: 25px;
+			background-color: $c-solitude;
+			font: {
+				size: 11px;
+				family: $f-OS-bold;
+			};
+			color: $c-grey;
+			text-transform: uppercase;
+			padding-left: 15px;
+		}
+
+
+		&-list {
+			border-bottom: 1px solid $c-solitude;
+			padding: 5px 15px;
+
+
+			&-item {
+				font: {
+					size: 13px;
+					family: $f-OS-bold;
+				};
+				height: 20px;
+				line-height: 20px;
+			}
+		}
+
+
+		&-info {
+			border-top: 1px solid $c-solitude;
+			height: 35px;
+			line-height: 35px;
+			color: $c-nero;
+			font: {
+				size: 13px;
+				family: $f-OS-bold;
+			};
+			padding-left: 15px;
+
+
+			&_btn {
+				color: $c-persimmon;
+				text-decoration: underline;
+			}
+		}
+
+
+		&-wrap {
+			min-height: 0;
+			max-height: 498px;
+			overflow-y: auto;
+		}
+
+
+		&-product {
+			border-top: 1px solid $c-solitude;
+
+
+			&:first-child {
+				border-top: none;
+			}
+
+
+			&--img {
+				width: 75px;
+
+
+				&-wrap {
+					float: left;
+					text-align: center;
+					width: 100px;
+					padding: {
+						top: 15px;
+						bottom: 15px;
+					}
+				}
+			}
+
+
+			&--info {
+				position: relative;
+				padding: {
+					left: 100px;
+					right: 15px;
+				}
+			}
+
+
+			&--title {
+				padding-top: 15px;
+				margin: {
+					bottom: 5px;
+				}
+				font: {
+					size: 13px;
+					family: $f-OS-bold;
+				};
+			}
+
+
+			&--desc {
+				font: {
+					size: 13px;
+				}
+				color: $c-nero;
+				
+				
+				&__more {
+					text-decoration: underline;
+				}
+
+
+				&__color,
+				&__more {
+					color: $c-persimmon;
+				}
+			}
+
+
+			&--bottom {
+				padding:{
+					top: 10px;
+					bottom: 10px;
+				}
+			}
+
+
+			&--price {
+				float: left;
+				font: {
+					size: 13px;
+				}
+				color: $c-nero;
+				padding-top: 8px;
+				padding-left: 30px;
+				@include respond-to(large) {
+					float: right;
+					clear: both;
+					padding: {
+						left: 0;
+						right: 15px;
+						bottom: 10px;
+					}
+				}
+				@include respond-to(small-max) {
+					float: right;
+					clear: both;
+					padding: {
+						left: 0;
+						right: 15px;
+						bottom: 10px;
+					}
+				}
+
+
+				&__color {
+					color: $c-persimmon;
+					font: {
+						family: $f-OS-bold;
+					};
+				}
+			}
+
+
+			&--btn {
+				float: right;
+				margin-right: 30px;
+				@include respond-to(large) {
+					margin-right: 15px;
+				}
+				@include respond-to(small-max) {
+					margin-right: 15px;
+				}
+			}
 		}
 	}
 }
