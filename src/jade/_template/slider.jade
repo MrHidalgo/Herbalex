@@ -1,48 +1,12 @@
--
-    var sliderInfoList = [
-        "10 years WorldWide Supplier",
-        "Free Insurance Delivery",
-        "24/7/365 Support Team",
-        "Top quality medications",
-        "100% Security ssl-encrypted"
-    ];
-
 
 .slider
     .container
-
         .slider__row.clearfix
-            .slider__left.slider__wrap
+
+            .slider__left
+
+                include ./_macros/_slider/slider__wrap
 
             .slider__right
 
-                .slider__info.slider__info-face
-                    .slider__info--border
-                        img(
-                            src="./image/img-slider-info.png"
-                            title=""
-                            alt=""
-                            class="slider__info--img"
-                        )
-
-                        a(
-                            href="javascript:void(0);"
-                            title=""
-                            class="slider__info--btn"
-                            data-id="Click here"
-                        )!= "Click here"
-
-                .slider__info.slider__info-body
-                    .slider__info--border
-
-                        ul.slider__info--list
-                            -for(var i = 0; i < sliderInfoList.length; i++)
-                                li.slider__info--item.clearfix
-                                    .slider__info--img-wrap
-                                        i(
-                                            class="slider__info--img slider__info--img-" + i
-                                        )
-                                    p(
-                                        class="slider__info--text"
-                                        data-id= sliderInfoList[i]
-                                    )!= sliderInfoList[i]
+                include ./_macros/_slider/slider__info

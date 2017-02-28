@@ -35,3 +35,33 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: "MuseoSansLight";
+	src: url("../fonts/MuseoSansLight.eot");
+	src: url("../fonts/MuseoSansLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MuseoSansLight.woff") format("woff"),
+	url("../fonts/MuseoSansLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "MuseoSansRegular";
+	src: url("../fonts/MuseoSansRegular.eot");
+	src: url("../fonts/MuseoSansRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MuseoSansRegular.woff") format("woff"),
+	url("../fonts/MuseoSansRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "MuseoSansBold";
+	src: url("../fonts/MuseoSansBold.eot");
+	src: url("../fonts/MuseoSansBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MuseoSansBold.woff") format("woff"),
+	url("../fonts/MuseoSansBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

@@ -1,0 +1,78 @@
+///
+/// IMPORT FILES
+///
+@import "../../../_mixin/mixin";
+@import "../../../_function/function";
+@import "../../../_variable/sprite";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-iris-blue        : return-value(color, iris-blue);
+$c-atlantis         : return-value(color, atlantis);
+
+$f-MS-light         : return-value(fonts, MS-light);
+$f-MS-bold          : return-value(fonts, MS-bold);
+///
+/// MAIN
+///
+.slider {
+	&__wrap {
+		position: relative;
+		height: $w-all;
+
+
+		&-img {
+			position: absolute;
+
+
+			&--bg {
+				left: 0;
+				bottom: 0;
+			}
+			&--leaves {
+				&-left {
+					left: 0;
+				}
+				&-right {
+					right: 0;
+					@include respond-to(large-max) {
+						display: none;
+					}
+				}
+				&-left,
+				&-right {
+					bottom: 0;
+				}
+			}
+			&--product {
+				left: 30px;
+				top: 20px;
+			}
+			&--tag {
+				left: 180px;
+				bottom: 10px;
+			}
+			&--meter {
+				bottom: 0;
+				left: 0;
+			}
+			&--girl {
+				right: 0;
+				bottom: 0;
+				@include respond-to(large-max) {
+					display: none;
+				}
+			}
+		}
+
+
+		&-text {
+			position: absolute;
+			top: 20px;
+			left: 230px;
+		}
+	}
+}

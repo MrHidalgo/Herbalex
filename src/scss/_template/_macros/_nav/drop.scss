@@ -22,6 +22,7 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 	&__drop {
 		display: none;
 		position: absolute;
+		z-index: 10;
 		overflow: hidden;
 		top: 50px;
 		left: 0;
