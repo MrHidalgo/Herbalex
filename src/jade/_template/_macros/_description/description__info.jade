@@ -1,0 +1,71 @@
+include ../../../_mixin/macrosMixin
+
+
+.description__info.clearfix
+    img(
+        src="./image/img-desc-leave.png"
+        title=""
+        alt=""
+        class="description__img description__img-leave"
+    )
+    img(
+        src="./image/img-desc-product.png"
+        title=""
+        alt=""
+        class="description__img description__img-product img_responsive"
+    )
+    img(
+        src="./image/img-desc-made.png"
+        title=""
+        alt=""
+        class="description__img description__img-made"
+    )
+    img(
+        src="./image/img-desc-tag.png"
+        title=""
+        alt=""
+        class="description__img description__img-tag"
+    )
+    img(
+        src="./image/img-desc-man.png"
+        title=""
+        alt=""
+        class="description__img description__img-man"
+    )
+
+    img(
+        src="./image/img-discount-25.png"
+        title=""
+        alt=""
+        class="discount__img"
+    )
+
+    .description__info_left
+        p.description__info-title
+            span.description__info-title_blue!= "VPXL "
+            span.description__info-title_red!= "- 25%"
+
+        +rating("description__info-rating--wrap")
+
+    .description__info_right
+        p.description__info-title
+            span.description__info-title_blue!= "VPXL "
+            span.description__info-title_red!= "- 25%"
+
+        +rating("description__info-rating--wrap")
+
+        p(
+            class="description__info-text"
+            data-id="VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life."
+        )!= "VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life."
+
+        .description__info-price--wrap
+            p.description__info-price--price!= "€11.06"
+            p.description__info-price--from!= "from bottle"
+            a(
+                href="javascript:void(0);"
+                title=""
+                class="btn btn_small description__info-price--btn"
+            )
+                span(class="btn__text", data-id="Order Now")!= "Order Now"
+                i.btn__icon

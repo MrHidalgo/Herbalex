@@ -1,0 +1,107 @@
+///
+/// IMPORT FILES
+///
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite";
+
+@import "../_template/_macros/_description/description__info";
+@import "../_template/_macros/_description/description__product";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-solitude		      : return-value(color, solitude);
+///
+/// MAIN
+///
+.description {
+	height: 442px;
+	@include respond-to(medium-max) {
+		height: auto;
+	}
+
+
+	&_left,
+	&_right {
+		float: left;
+		width: 50%;
+		height: $w-all;
+		@include respond-to(medium) {
+			height: 440px;
+		}
+		@include respond-to(medium-max) {
+			float: none;
+			width: $w-all;
+		}
+		@include respond-to(small-max) {
+			height: auto;
+		}
+	}
+
+
+	&_left {
+		@include respond-to(medium) {
+			margin-bottom: 20px;
+		}
+		@include respond-to(small-max) {
+			margin-bottom: 20px;
+		}
+	}
+
+
+	&_right {
+		@include respond-to(small-max) {
+			padding: {
+				left: 20px;
+				right: 20px;
+			}
+		}
+	}
+
+
+	&__info,
+	&__product {
+		height: $w-all;
+		border: 1px solid $c-solitude;
+	}
+
+
+	&__img {
+		position: absolute;
+
+
+		&-leave {
+			left: 0;
+			top: 15px;
+		}
+		&-man {
+			left: 0;
+			bottom: 0;
+		}
+		&-product {
+			bottom: 20px;
+			left: 0;
+			@include respond-to(small-max) {
+				width: 150px;
+				top: 20px;
+				left: -10px;
+				bottom: auto;
+			}
+		}
+		&-tag {
+			left: 5px;
+			top: 125px;
+		}
+		&-made {
+			left: 70px;
+			top: 90px;
+			@include respond-to(small-max) {
+				left: 30px;
+				top: 200px;
+			}
+		}
+	}
+}

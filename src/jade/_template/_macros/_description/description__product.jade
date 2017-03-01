@@ -1,0 +1,52 @@
+include ../../../_mixin/macrosMixin
+
+
+.description__product
+    -for(var i = 0; i < 3; i++)
+        .description__product-row
+            .description__product-wrap.clearfix
+                .description__product-text
+                    p.description__product-title!= "VIM-25"
+                    +rating("")
+
+                .description__product-price
+                    span.aligner
+                    .description__product-price-wrap
+                        p.description__product-price-old!= "old price: € 14.99"
+                        p.description__product-price-num!= "€11.06"
+                        p.description__product-price-from!= "from bottle"
+
+            a(
+                href="javascript:void(0);"
+                title=""
+                class="btn btn_small description__product--btn"
+            )
+                span(class="btn__text", data-id="Order Now")!= "Order Now"
+                i.btn__icon
+
+            img(
+                src="./image/img-discount-10.png"
+                title=""
+                alt=""
+                class="discount__img"
+            )
+
+        .description__product-row
+            .description__product-wrap.clearfix
+                .description__product-text
+                    p.description__product-title!= "Rumalaya Liniment"
+                    +rating("")
+
+                .description__product-price
+                    span.aligner
+                    .description__product-price-wrap
+                        p.description__product-price-num!= "€11.06"
+                        p.description__product-price-from!= "from bottle"
+
+            a(
+                href="javascript:void(0);"
+                title=""
+                class="btn btn_small description__product--btn"
+            )
+                span(class="btn__text", data-id="Order Now")!= "Order Now"
+                i.btn__icon

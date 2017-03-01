@@ -1,0 +1,207 @@
+///
+/// IMPORT FILES
+///
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-solitude 	      : return-value(color, solitude);
+$c-iris-blue 	      : return-value(color, iris-blue);
+$c-persimmon 	      : return-value(color, persimmon);
+$c-nobel     	      : return-value(color, nobel);
+$c-nero     	      : return-value(color, nero);
+
+$f-OS-bold          : return-value(fonts, OS-bold);
+///
+/// MAIN
+///
+.product {
+
+
+	.container {
+		font-size: 0;
+	}
+
+
+	&__box {
+		float: left;
+		width: (1170 / 4 - (20)) * 1px;
+		padding: {
+			top: 0;
+			bottom: 20px;
+			left: 10px;
+			right: 10px;
+		};
+		@include respond-to(large) {
+			width: (910 / 3 - (20)) * 1px;
+
+
+			&:first-child {
+				display: none;
+			}
+		}
+		@include respond-to(medium) {
+			width: (690 / 3 - (20)) * 1px;
+
+
+			&:first-child {
+				display: none;
+			}
+		}
+		@include respond-to(small) {
+			float: none;
+			width: 300px;
+			margin: {
+				left: auto;
+				right: auto;
+			}
+		}
+		@include respond-to(extra-small) {
+			width: 100%;
+		}
+	}
+
+
+	&__container {
+		position: relative;
+		background-color: $c-white;
+		text-align: center;
+		border: 1px solid $c-solitude;
+	}
+
+
+	&__title {
+		color: $c-iris-blue;
+		font-size: 23px;
+		padding-top: 3px;
+		@include respond-to(medium) {
+			font-size: 20px;
+			padding-top: 6px;
+		}
+
+
+		&-wrap {
+			height: 60px;
+			border-bottom: 1px solid $c-solitude;
+			font-family: $f-OS-bold;
+		}
+	}
+
+
+	&__category {
+		color: $c-persimmon;
+		font-size: 14px;
+	}
+
+
+	&__rating {
+		&-wrap {
+			height: 25px;
+			line-height: 25px;
+			margin-bottom: 5px;
+		}
+	}
+
+
+	&__img {
+		margin: {
+			left: auto;
+			right: auto;
+		};
+
+
+		&-wrap {
+			padding-top: 30px;
+			height: 190px;
+			position: relative;
+			@include respond-to(small-max) {
+				height: 220px;
+			}
+		}
+
+
+		&-tag,
+		&-made {
+			position: absolute;
+		}
+
+
+		&-tag {
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+
+
+		&-made {
+			top: 0;
+			right: 50px;
+			@include respond-to(medium) {
+				right: 15px;
+			}
+		}
+	}
+
+
+	&__desc {
+		color: $c-nero;
+
+
+		&-wrap {
+			font-size: 12px;
+			text-align: left;
+			padding: {
+				left: 10px;
+				right: 10px;
+				bottom: 10px;
+			};
+			border-bottom: 1px solid $c-solitude;
+		}
+
+
+		&-btn {
+			color: $c-persimmon;
+			text-decoration: underline;
+		}
+	}
+
+
+	&__price {
+		font: {
+			size: 25px;
+			family: $f-OS-bold;
+		};
+		color: $c-persimmon;
+
+
+		&-wrap {
+			padding: {
+				top: 15px;
+				bottom: 20px;
+			};
+		}
+
+
+		&-old,
+		&-from {
+			color: $c-nobel;
+			font: {
+				size: 13px;
+				family: $f-OS-bold;
+			}
+		}
+
+
+		&-btn {
+			display: inline-block;  *display: inline;  *zoom: 1;
+			margin-top: 10px;
+			font-size: 16px;
+		}
+	}
+}

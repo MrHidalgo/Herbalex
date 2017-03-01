@@ -23,7 +23,6 @@ $f-OS-regular       : return-value(fonts, OS-regular);
 .slider {
 	padding: {
 		top: 20px;
-		bottom: 20px;
 	}
 	@include respond-to(small-max) {
 		display: none;

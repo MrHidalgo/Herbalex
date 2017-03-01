@@ -1,0 +1,124 @@
+///
+/// IMPORT FILES
+///
+@import "../../../_mixin/mixin";
+@import "../../../_function/function";
+@import "../../../_variable/sprite";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-solitude		      : return-value(color, solitude);
+$c-persimmon 	      : return-value(color, persimmon);
+$c-nobel     	      : return-value(color, nobel);
+$c-nero     	      : return-value(color, nero);
+$c-iris-blue 	      : return-value(color, iris-blue);
+$c-violet-red       : return-value(color, violet-red);
+
+$f-OS-bold          : return-value(fonts, OS-bold);
+///
+/// MAIN
+///
+.description {
+	&__product {
+		margin-left: 10px;
+		background-color: $c-white;
+		@include respond-to(medium-max) {
+			margin: {
+				left: 0;
+			}
+		}
+
+
+		&-row {
+			position: relative;
+			// 72.33
+			height: (440 / 6 - (1)) * 1px;
+			border-top: 1px solid $c-solitude;
+			@include respond-to(small-max) {
+				height: 120px;
+			}
+
+
+			&:first-child {
+				border-top: none;
+				height: 73.33px;
+				@include respond-to(small-max) {
+					height: 120px;
+				}
+			}
+		}
+
+
+		&-wrap {
+			position: relative;
+			padding: {
+				left: 15px;
+				right: 180px;
+			}
+			height: $w-all;
+			@include respond-to(small-max) {
+				padding-right: 15px;
+			}
+		}
+
+
+		&--btn {
+			position: absolute;
+			right: 15px;
+			top: 20px;
+			@include respond-to(small-max) {
+				right: auto;
+				left: 15px;
+				top: auto;
+				bottom: 15px;
+			}
+		}
+
+
+		&-title {
+			font: {
+				family: $f-OS-bold;
+			};
+			color: $c-iris-blue;
+		}
+
+
+		&-text {
+			float: left;
+			padding-top: 16px;
+		}
+
+
+		&-price {
+			float: right;
+			height: $w-all;
+			text-align: right;
+
+
+			&-wrap {
+				display: inline-block;  *display: inline;  *zoom: 1;
+				vertical-align: middle;
+			}
+
+
+			&-old,
+			&-from {
+				color: $c-nobel;
+				font: {
+					size: 13px;
+					family: $f-OS-bold;
+				}
+			}
+			&-num {
+				color: $c-persimmon;
+				font: {
+					size: 16px;
+					family: $f-OS-bold;
+				}
+			}
+		}
+	}
+}

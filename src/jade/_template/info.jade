@@ -1,0 +1,22 @@
+include ../_mixin/macrosMixin
+
+
+.info
+    .container.clearfix
+        +mainTitle("Today's Bestsellers")
+
+        .info__product
+            span(
+                class="info__product-today"
+                data-id="Today, "
+            )!= "Today, "
+            a(
+                href="javascript:void(0);"
+                title=""
+                class="info__product-name"
+            )!= "AyurSlim"
+            span(
+                class="info__product-box"
+                data-id= " bought: "
+            )!= " bought: "
+            span.info__product-count!= "313"

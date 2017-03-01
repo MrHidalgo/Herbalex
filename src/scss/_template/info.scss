@@ -1,0 +1,53 @@
+///
+/// IMPORT FILES
+///
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-iris-blue        : return-value(color, iris-blue);
+$c-dim-gray         : return-value(color, dim-gray);
+
+$f-OS-bold          : return-value(fonts, OS-bold);
+///
+/// MAIN
+///
+.info {
+	height: 60px;
+	line-height: 60px;
+	@include respond-to(small-max) {
+		padding: {
+			left: 15px;
+			right: 15px;
+		}
+	}
+
+
+	&__product {
+		float: right;
+		color: $c-dim-gray;
+		font: {
+			size: 18px;
+			family: $f-OS-bold;
+		};
+		@include respond-to(small-max) {
+			display: none;
+		}
+
+
+		&-name {
+			text-decoration: underline;
+		}
+
+
+		&-name,
+		&-count {
+			color: $c-iris-blue;
+		}
+	}
+}

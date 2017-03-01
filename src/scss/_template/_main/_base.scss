@@ -12,6 +12,8 @@ $w-all              : return-value(dimension, all);
 $c-white			      : return-value(color, white);
 $c-black			      : return-value(color, black);
 $c-atlantis 	      : return-value(color, atlantis);
+$c-dim-gray  	      : return-value(color, dim-gray);
+$c-nobel    	      : return-value(color, nobel);
 
 $f-OS-bold          : return-value(fonts, OS-bold);
 ///
@@ -210,4 +212,69 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 	display: inline-block;  *display: inline;  *zoom: 1;
 	height: 100%;
 	vertical-align: middle;
+}
+///
+/// MAIN TITLE
+///
+.main__title {
+	float: left;
+	height: 60px;
+	position: relative;
+	top: -5px;
+
+
+	&_index {
+		.main__title-icon {
+			@include retina-sprite($sp-i-main-title-index-group);
+		}
+	}
+
+
+	&-icon {
+		display: inline-block;  *display: inline;  *zoom: 1;
+		vertical-align: middle;
+		margin-right: 5px;
+	}
+
+
+	&-text {
+		font: {
+			size: 24px;
+			family: $f-OS-bold;
+		};
+		color: $c-dim-gray;
+		@include respond-to(small-max) {
+			font-size: 18px;
+		}
+	}
+}
+///
+/// RATING
+///
+.rating {
+	&__text {
+		font-size: 11px;
+		color: $c-nobel;
+		vertical-align: middle;
+		margin-right: 5px;
+	}
+
+
+	&__icon {
+		position: relative;
+		top: 1px;
+		display: inline-block;  *display: inline;  *zoom: 1;
+		vertical-align: middle;
+		@include retina-sprite($sp-i-rating-group);
+	}
+}
+///
+/// DISCOUNT
+///
+.discount {
+	&__img {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
 }

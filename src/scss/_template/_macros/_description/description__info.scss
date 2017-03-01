@@ -1,0 +1,173 @@
+///
+/// IMPORT FILES
+///
+@import "../../../_mixin/mixin";
+@import "../../../_function/function";
+@import "../../../_variable/sprite";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-solitude		      : return-value(color, solitude);
+$c-persimmon 	      : return-value(color, persimmon);
+$c-nobel     	      : return-value(color, nobel);
+$c-nero     	      : return-value(color, nero);
+$c-iris-blue 	      : return-value(color, iris-blue);
+$c-violet-red       : return-value(color, violet-red);
+
+$f-OS-bold          : return-value(fonts, OS-bold);
+///
+/// MAIN
+///
+.description {
+	&__info {
+		position: relative;
+		overflow: hidden;
+		margin-right: 10px;
+		background: rgb(225,244,251);
+		background: -moz-linear-gradient(top,  rgba(225,244,251,1) 0%, rgba(244,240,215,1) 100%);
+		background: -webkit-linear-gradient(top,  rgba(225,244,251,1) 0%,rgba(244,240,215,1) 100%);
+		background: linear-gradient(to bottom,  rgba(225,244,251,1) 0%,rgba(244,240,215,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1f4fb', endColorstr='#f4f0d7',GradientType=0 );
+		@include respond-to(medium-max) {
+			margin: {
+				right: 0;
+			}
+		}
+
+
+		&_left,
+		&_right {
+			position: relative;
+			float: left;
+			width: 50%;
+			height: $w-all;
+		}
+
+
+		&_left {
+			@include respond-to(medium) {
+				width: 40%;
+			}
+			@include respond-to(small-max) {
+				width: 30%;
+			}
+		}
+
+
+		&_right {
+			.description__info-title,
+			.description__info-rating--wrap {
+				display: none;
+				@include respond-to(small-max) {
+					display: block;
+					text-align: left;
+					padding-left: 15px;
+				}
+			}
+			@include respond-to(medium) {
+				width: 60%;
+			}
+			@include respond-to(small-max) {
+				float: right;
+				width: 70%;
+			}
+		}
+
+
+		&-text {
+			padding-top: 30px;
+			font-size: 12px;
+			color: $c-nero;
+			padding: {
+				right: 20px;
+				left: 20px;
+			}
+			line-height: 1.6;
+		}
+
+
+		&-price {
+			&--wrap {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: $w-all;
+				padding: {
+					top: 15px;
+					bottom: 15px;
+				};
+				text-align: center;
+				background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+				background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+				background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+				@include respond-to(small-max) {
+					position: static;
+					background: none;
+					text-align: left;
+					padding-left: 20px;
+				}
+			}
+
+
+			&--price {
+				font: {
+					size: 25px;
+					family: $f-OS-bold;
+				};
+				color: $c-persimmon;
+			}
+
+
+			&--from {
+				color: $c-nobel;
+				font: {
+					size: 13px;
+					family: $f-OS-bold;
+				}
+			}
+
+
+			&--btn {
+				display: inline-block;  *display: inline;  *zoom: 1;
+				margin-top: 10px;
+				font-size: 16px;
+			}
+		}
+
+
+		&-title {
+			padding-top: 30px;
+			text-align: center;
+			line-height: 1;
+			@include respond-to(small-max) {
+				display: none;
+			}
+
+
+			&_blue,
+			&_red {
+				font-size: 36px;
+			}
+
+
+			&_blue {
+				color: $c-iris-blue;
+			}
+			&_red {
+				color: $c-violet-red;
+			}
+		}
+
+
+		&-rating--wrap {
+			text-align: center;
+			@include respond-to(small-max) {
+				display: none;
+			}
+		}
+	}
+}

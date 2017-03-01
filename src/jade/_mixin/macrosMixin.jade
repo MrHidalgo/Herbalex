@@ -8,3 +8,85 @@ mixin btn(className, classNameModify, textName)
         span.btn__text!= textName
         span.btn__icon-wrap
             i.btn__icon
+
+
+//- MAIN TITLE
+mixin mainTitle(textName)
+    h1(class="main__title main__title_index")
+        i.main__title-icon
+        span(
+            class="main__title-text"
+            data-id= textName
+        )!= textName
+
+
+//- RATING
+mixin rating(className)
+    div(class="rating " + className)
+       span.rating__text!= "Rating:"
+       i.rating__icon
+
+
+//- PRODUCT
+mixin productBlock(productNameArr, productCategoryArr, ratingClassName)
+    -for(var i = 0; i < productName.length; i++)
+        .product__box
+            .product__container
+
+                if(i == 2)
+                    img(
+                        src="./image/img-discount-10.png"
+                        title=""
+                        alt=""
+                        class="discount__img"
+                    )
+
+                .product__title-wrap
+                    p.product__title!= productNameArr[i]
+                    p.product__category!= productCategoryArr[i]
+
+                +rating(ratingClassName)
+
+                .product__img-wrap
+                    img(
+                        src="./image/img-product-2.png"
+                        title=""
+                        alt=""
+                        class="product__img product__img-main img_responsive"
+                    )
+                    img(
+                        src="./image/img-product-tag-0.png"
+                        title=""
+                        alt=""
+                        class="product__img product__img-tag img_responsive"
+                    )
+                    img(
+                        src="./image/img-product-tag-1.png"
+                        title=""
+                        alt=""
+                        class="product__img product__img-made img_responsive"
+                    )
+
+                .product__desc-wrap
+                    span(
+                        class="product__desc"
+                        data-id="AyurSlim is an ayurvedic formulation of pure herbs used for the treatment of obesity "
+                    )!= "AyurSlim is an ayurvedic formulation of pure herbs used for the treatment of obesity "
+                    a(
+                        href="javascript:void(0);"
+                        title=""
+                        class="product__desc-btn"
+                    )!= "More Info"
+
+                .product__price-wrap
+                    p.product__price-old!= "old price: € 14.99"
+                    p.product__price!= "€11.06"
+                    p.product__price-from!= "from bottle"
+                    a(
+                        href="javascript:void(0);"
+                        title=""
+                        class="btn btn_small product__price-btn"
+                    )
+                        span(class="btn__text", data-id="Order Now")!= "Order Now"
+                        i.btn__icon
+

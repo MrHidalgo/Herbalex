@@ -1,0 +1,20 @@
+include ../_mixin/macrosMixin
+
+-
+    var  productName = [
+        "Rumalaya Liniment",
+        "Himcolin Gel",
+        "Confido",
+        "VIM-25"
+    ];
+    var  productCategory = [
+        "Erectile Dysfunction",
+        "Women's Health",
+        "Weight Loss",
+        "Gastrointestinal"
+    ];
+
+
+.product
+    .container.clearfix
+        +productBlock(productName, productCategory, "product__rating-wrap")
