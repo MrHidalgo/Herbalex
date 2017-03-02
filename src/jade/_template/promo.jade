@@ -1,0 +1,26 @@
+-
+    var promoText = [
+        "10 years WorldWide Supplier",
+        "24/7/365 Support Team",
+        "100% Security ssl-encrypted",
+        "10 Bonus pills to your order",
+        "Free Insurance Delivery",
+        "Top quality medications",
+        "100% Satisfaction Guarantee",
+        "Bargain prices"
+    ];
+
+
+.promo
+    .container
+        ul.promo__list.clearfix
+            -for(var i = 0; i < promoText.length; i++)
+                li.promo__list-item
+                    span.aligner
+                    .promo__list-item-wrap
+                        .promo__list-icon-wrap
+                            i(class="promo__list-icon promo__list-icon--" + i)
+                        span(
+                            class="promo__list-text"
+                            data-id= promoText[i]
+                        )!= promoText[i]

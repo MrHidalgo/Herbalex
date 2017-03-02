@@ -1,0 +1,16 @@
+
+.payment
+    p.payment__title
+        | Payment method
+        i.payment__title-icon
+
+    br
+    
+    .payment__img-wrap
+        -for(var i = 0; i < 5; i++)
+            img(
+                src="./image/img-payment-" + i + ".png"
+                title=""
+                alt=""
+                class="payment__img"
+            )

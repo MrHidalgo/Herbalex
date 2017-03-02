@@ -1,0 +1,40 @@
+include ../_mixin/macrosMixin
+
+
+-
+    var reviewText = "I have tried both VIM-25. Both have their pro's and con's. I get a better and more constant erection with VIM-25. It started working after about 30 mins and it really carries on for a good. I get occasional headaches from VIM-25, but the result definitely well worth it!";
+
+
+.review
+    .container
+        .review_top.clearfix
+            +mainTitle("Today's Review", "main__title_review")
+
+        .review_bottom.clearfix
+            .review_left
+                i.review_left-corner
+                .review__btn-wrap
+                    a(
+                        href="javascript:void(0);"
+                        title=""
+                        class="review__btn active"
+                    )!= "doctors"
+                    | &nbsp;/&nbsp;
+                    a(
+                        href="javascript:void(0);"
+                        title=""
+                        class="review__btn "
+                    )!= "customers"
+
+                p.review__text!= reviewText + " " + reviewText + " " + reviewText
+
+
+            .review_right.review__author
+                img(
+                    src="./image/img-review.png"
+                    title=""
+                    alt=""
+                    class="review__author-img"
+                )
+                p.review__author-title!= "DR. SHON WALLET"
+                p.review__author-from!= "Cheltenham, United Kingdom"

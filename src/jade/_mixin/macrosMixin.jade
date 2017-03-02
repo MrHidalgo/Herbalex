@@ -11,8 +11,8 @@ mixin btn(className, classNameModify, textName)
 
 
 //- MAIN TITLE
-mixin mainTitle(textName)
-    h1(class="main__title main__title_index")
+mixin mainTitle(textName, className)
+    h1(class="main__title " + className)
         i.main__title-icon
         span(
             class="main__title-text"

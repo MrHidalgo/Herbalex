@@ -220,14 +220,21 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 	float: left;
 	height: 60px;
 	position: relative;
-	top: -5px;
 
 
-	&_index {
+	&_bestSeller {
+		top: -5px;
 		.main__title-icon {
 			@include retina-sprite($sp-i-main-title-index-group);
 		}
 	}
+	&_review {
+		top: 2px;
+		.main__title-icon {
+			@include retina-sprite($sp-i-review-group);
+		}
+	}
+
 
 
 	&-icon {

@@ -1,0 +1,84 @@
+///
+/// IMPORT FILES
+///
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite";
+
+@import "./_macros/_footer/copyright";
+@import "./_macros/_footer/partner";
+@import "./_macros/_footer/payment";
+@import "./_macros/_footer/customer";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-atlantis 	      : return-value(color, atlantis);
+$c-solitude 	      : return-value(color, solitude);
+$c-very-light-grey  : return-value(color, very-light-grey);
+///
+/// MAIN
+///
+.footer {
+	position: relative;
+	height: (25 + 120) * 1px;
+	@include respond-to(medium) {
+		height: (25 + 120 + 70) * 1px;
+	}
+	@include respond-to(small-max) {
+		height: (60 + 110 + 70 + 110) * 1px;
+	}
+
+
+	&__theme-top,
+	&__theme-middle-0,
+	&__theme-middle-1,
+	&__theme-bottom {
+		position: absolute;
+		z-index: 0;
+		left: 0;
+		width: $w-all;
+	}
+
+	&__theme-top {
+		top: 0;
+		height: 25px;
+		background-color: $c-atlantis;
+		@include respond-to(small-max) {
+			height: 60px;
+		}
+	}
+	&__theme-middle-0 {
+		top: 25px;
+		height: 120px;
+		background-color: $c-solitude;
+		@include respond-to(small-max) {
+			top: 60px;
+			height: 110px;
+		}
+	}
+	&__theme-middle-1 {
+		@include respond-to(small-max) {
+			top: 170px;
+			height: 70px;
+			background-color: $c-solitude;
+			border-top: 1px solid $c-very-light-grey;
+		}
+	}
+	&__theme-bottom {
+		@include respond-to(medium-max) {
+			background-color: $c-solitude;
+			border-top: 1px solid $c-very-light-grey;
+		}
+		@include respond-to(medium) {
+			top: 145px;
+			height: 69px;
+		}
+		@include respond-to(small-max) {
+			top: 240px;
+			height: 110px;
+		}
+	}
+}

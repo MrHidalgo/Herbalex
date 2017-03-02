@@ -1,0 +1,110 @@
+///
+/// IMPORT FILES
+///
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-nero 			      : return-value(color, nero);
+$c-azure 			      : return-value(color, azure);
+$c-light-blue       : return-value(color, light-blue);
+$c-iris-blue        : return-value(color, iris-blue);
+
+$f-OS-bold          : return-value(fonts, OS-bold);
+///
+/// MAIN
+///
+.review {
+	@include respond-to(small-max) {
+		display: none;
+	}
+
+
+	&_top {
+		height: 60px;
+	}
+
+
+	&_left,
+	&_right {
+		float: left;
+		min-height: 120px;
+	}
+	&_left {
+		position: relative;
+		width: (1170 - 250 - 2) * 1px;
+		background-color: $c-azure;
+		border: 1px solid $c-light-blue;
+		@include respond-to(large) {
+			width: (910 - 250 - 2) * 1px;
+		}
+		@include respond-to(medium) {
+			width: (690 - 250 - 2) * 1px;
+		}
+
+
+		&-corner {
+			position: absolute;
+			right: -16px;
+			top: 50%;
+			margin-top: -7px;
+			@include retina-sprite($sp-i-review-corner-group);
+		}
+	}
+	&_right {
+		width: 250px;
+	}
+
+
+	&__btn {
+		&.active {
+			color: $c-iris-blue;
+			border-bottom: 1px dashed $c-iris-blue;
+		}
+		&-wrap {
+			position: absolute;
+			top: -45px;
+			right: 0;
+		}
+	}
+
+
+	&__text {
+		padding: 25px;
+		font: {
+			style: italic;
+			size: 13px;
+			family: $f-OS-bold;
+		};
+		color: $c-nero;
+	}
+
+
+	&__author {
+		text-align: center;
+
+
+		&-title {
+			text-transform: uppercase;
+			font: {
+				size: 14px;
+				family: $f-OS-bold;
+			};
+			color: $c-nero;
+		}
+
+
+		&-from {
+			font: {
+				size: 13px;
+				style: italic;
+			}
+			color: lighten($c-nero, 30%);
+		}
+	}
+}

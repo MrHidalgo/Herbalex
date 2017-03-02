@@ -1,0 +1,98 @@
+///
+/// IMPORT FILES
+///
+@import "../_mixin/mixin";
+@import "../_function/function";
+@import "../_variable/sprite";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-nero 			      : return-value(color, nero);
+
+$f-OS-bold          : return-value(fonts, OS-bold);
+///
+/// MAIN
+///
+.promo {
+	padding: {
+		top: 30px;
+		bottom: 30px;
+	}
+	@include respond-to(small-max) {
+		padding: {
+			left: 15px;
+			right: 15px;
+		}
+	}
+
+
+	&__list {
+		&-item {
+			position: relative;
+			float: left;
+			font-size: 0;
+			width: (100 / 4) * 1%;
+			max-width: (100 / 4) * 1%;
+			height: 40px;
+			@include respond-to(medium) {
+				width: (100 / 3) * 1%;
+				max-width: (100 / 3) * 1%;
+			}
+			@include respond-to(small-max) {
+				width: $w-all;
+			}
+
+
+			&-wrap {
+				display: inline-block;  *display: inline;  *zoom: 1;
+				font-size: 0;
+			}
+		}
+
+
+		&-icon {
+			display: block;
+			margin-top: 10px;
+
+
+			&-wrap {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: $w-all;
+				width: 30px;
+			}
+		}
+
+
+		&-text {
+			font: {
+				style: italic;
+				size: 13px;
+				family: $f-OS-bold;
+			};
+			color: $c-nero;
+			vertical-align: middle;
+			position: relative;
+			left: 30px;
+			padding-right: 30px;
+		}
+	}
+}
+@each $className, $iconName in
+					("0", $sp-i-promo-0-group),
+					("1", $sp-i-promo-1-group),
+					("2", $sp-i-promo-2-group),
+					("3", $sp-i-promo-3-group),
+					("4", $sp-i-promo-4-group),
+					("5", $sp-i-promo-5-group),
+					("6", $sp-i-promo-6-group),
+					("7", $sp-i-promo-7-group),
+{
+	.promo__list-icon--#{$className} {
+		@include retina-sprite($iconName);
+	}
+}

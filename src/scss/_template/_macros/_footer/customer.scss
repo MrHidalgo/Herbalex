@@ -1,0 +1,85 @@
+///
+/// IMPORT FILES
+///
+@import "../../../_mixin/mixin";
+@import "../../../_function/function";
+@import "../../../_variable/sprite";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-very-light-grey  : return-value(color, very-light-grey);
+$c-dim-gray         : return-value(color, dim-gray);
+$c-iris-blue        : return-value(color, iris-blue);
+
+$f-OS-bold          : return-value(fonts, OS-bold);
+///
+/// MAIN
+///
+.customer {
+	position: absolute;
+	z-index: 10;
+	right: 15px;
+	width: 150px;
+	height: 70px;
+	top: 50px;
+	padding-left: 20px;
+	border-left: 1px solid $c-very-light-grey;
+	@include respond-to(medium-max) {
+		border-left: none;
+		width: auto;
+	}
+	@include respond-to(medium) {
+		top: (25 + 120) * 1px;
+	}
+	@include respond-to(small-max) {
+		left: 15px;
+		top: 240px;
+		margin: {
+			left: auto;
+			right: auto;
+		};
+		text-align: center;
+		height: auto;
+		padding-left: 0;
+	}
+
+
+	&__phone {
+		font: {
+			size: 19px;
+			family: $f-OS-bold;
+		};
+		color: $c-dim-gray;
+		padding-bottom: 10px;
+		@include respond-to(medium-max) {
+			line-height: 1.2;
+			padding-top: 10px;
+			padding-bottom: 0;
+		}
+
+
+		&_color {
+			color: $c-iris-blue;
+		}
+	}
+
+
+	&__time,
+	&__text {
+		line-height: 1.2;
+		text-transform: uppercase;
+		font-size: 12px;
+		color: $c-dim-gray;
+		@include respond-to(medium-max) {
+			display: inline-block;  *display: inline;  *zoom: 1;
+		}
+	}
+
+
+	&__text {
+		padding-bottom: 5px;
+	}
+}

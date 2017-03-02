@@ -49,9 +49,19 @@ html(lang="en")
                 //- DESCRIPTION
                 include ./_template/description
 
+                //- REVIEW
+                include ./_template/review
+
+                //- PROMO
+                include ./_template/promo
 
 
-        div(class="lang__btn", style="text-align:center; padding-top:50px; padding-bottom:15px; position:relative; z-index;100;")
+        //- HEADER [support, menu, search, logotype, language, currency, cart]
+        include ./_template/footer
+
+
+
+        div(class="lang__btn", style="display:none; text-align:center; padding-top:50px; padding-bottom:15px; position:relative; z-index;100;")
             a(
                 href="javascript:void(0);"
                 data-lang="en"

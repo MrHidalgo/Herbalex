@@ -64,8 +64,11 @@ $c-solitude		      : return-value(color, solitude);
 
 	&__info,
 	&__product {
-		height: $w-all;
+		height: 440px;
 		border: 1px solid $c-solitude;
+		@include respond-to(small-max) {
+			height: $w-all;
+		}
 	}
 
 

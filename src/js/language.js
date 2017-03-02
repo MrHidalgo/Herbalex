@@ -1,6 +1,6 @@
 var lang = {
     en : {
-        "- - 24/7 customer support service" : "- 24/7 customer support service",
+        "- 24/7 customer support service" : "- 24/7 customer support service",
 
         "Main" : "Main",
         "About us" : "About us",
@@ -55,7 +55,13 @@ var lang = {
 
         "AyurSlim is an ayurvedic formulation of pure herbs used for the treatment of obesity " : "AyurSlim is an ayurvedic formulation of pure herbs used for the treatment of obesity  ",
 
-        "VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life." : "VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life."
+        "VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life." : "VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life.",
+
+        "10 Bonus pills to your order" : "10 Bonus pills to your order",
+        "100% Satisfaction Guarantee" : "100% Satisfaction Guarantee",
+        "Bargain prices" : "Bargain prices",
+
+        "© 2001–2013. Herbalex. All rights reserved." : "© 2001–2013. Herbalex. All rights reserved."
     } ,
     de : {
         "- 24/7 customer support service" : "- 24/7 Kundenbetreuung",
@@ -113,7 +119,13 @@ var lang = {
 
         "AyurSlim is an ayurvedic formulation of pure herbs used for the treatment of obesity " : "AyurSlim ist eine ayurvedische Formulierung von reinen Kräutern, die für die Behandlung von Fettleibigkeit verwendet werden ",
 
-        "VPXL (Very Penis Extended Long) ist ein hochwertiges Medikament, das von Apotheken-Spezialisten für die Erhöhung der Penisgröße erstellt wird. Es wirkt auf sowohl beschnittenen als auch nicht beschnittenen Penis. Monatliche Versorgung beträgt 60 Pillen pro Monat. Sie werden Ergebnisse aus dem ersten Monat der Behandlung bemerken. VPXL für mindestens 4 Monate nehmen Sie erhöhen die Penisgröße, härter und länger Erektion und Verbesserung Ihres Sexuallebens." : "VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life."
+        "VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life." : "VPXL (Very Penis Extended Long) ist ein hochwertiges Medikament, das von Apotheken-Spezialisten für die Erhöhung der Penisgröße erstellt wird. Es wirkt auf sowohl beschnittenen als auch nicht beschnittenen Penis. Monatliche Versorgung beträgt 60 Pillen pro Monat. Sie werden Ergebnisse aus dem ersten Monat der Behandlung bemerken. VPXL für mindestens 4 Monate nehmen Sie erhöhen die Penisgröße, härter und länger Erektion und Verbesserung Ihres Sexuallebens.",
+
+        "10 Bonus pills to your order" : "10 Bonuspillen zu Ihrer Bestellung",
+        "100% Satisfaction Guarantee" : "100% Zufriedenheitsgarantie",
+        "Bargain prices" : "Schnäppchenpreise",
+
+        "© 2001–2013. Herbalex. All rights reserved." : "© 2001-2013 Herbalex Alle Rechte vorbehalten."
     },
     fr : {
         "- 24/7 customer support service" : "- 24/7 service de soutien à la clientèle",
@@ -171,7 +183,13 @@ var lang = {
 
         "AyurSlim is an ayurvedic formulation of pure herbs used for the treatment of obesity " : "AyurSlim est une formulation ayurvédique d'herbes pures utilisées pour le traitement de l'obésité ",
 
-        "VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life." : "VPXL (Très pénis prolongé long) est un médicament de haute qualité qui est créé par des spécialistes de la pharmacie pour augmenter la taille du pénis. Il fonctionne sur le pénis circoncis et non circoncis. L'approvisionnement mensuel est de 60 pilules par mois. Vous remarquerez les résultats du premier mois de traitement. Prenant VPXL pendant au moins 4 mois, vous obtiendrez une augmentation de la taille du pénis, érection plus difficile et plus longue et l'amélioration de votre vie sexuelle."
+        "VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life." : "VPXL (Très pénis prolongé long) est un médicament de haute qualité qui est créé par des spécialistes de la pharmacie pour augmenter la taille du pénis. Il fonctionne sur le pénis circoncis et non circoncis. L'approvisionnement mensuel est de 60 pilules par mois. Vous remarquerez les résultats du premier mois de traitement. Prenant VPXL pendant au moins 4 mois, vous obtiendrez une augmentation de la taille du pénis, érection plus difficile et plus longue et l'amélioration de votre vie sexuelle.",
+
+        "10 Bonus pills to your order" : "10 Bonus pilules à votre commande",
+        "100% Satisfaction Guarantee" : "100% Satisfaction Garantie",
+        "Bargain prices" : "Prix d'aubaine",
+
+        "© 2001–2013. Herbalex. All rights reserved." : "© 2001-2013. Herbalex. Tous les droits sont réservés."
     },
     it : {
         "- 24/7 customer support service" : "- 24/7 servizio di supporto clienti",
@@ -229,7 +247,13 @@ var lang = {
 
         "AyurSlim is an ayurvedic formulation of pure herbs used for the treatment of obesity " : "Ayurslim è una formulazione ayurvedica di erbe pure usato per il trattamento dell'obesità ",
 
-        "VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life." : "VPXL (Very Penis Extended Long) è un farmaco di alta qualità che è stato creato da specialisti farmacia per aumentare le dimensioni del pene. Esso agisce come ai falli circoncisi, come non circoncisi. fornitura mensile è di 60 pillole al mese. Si noterà risultati del primo mese di trattamento. Prendendo VPXL per almeno 4 mesi si ottiene aumentando di dimensioni del pene, più duro e più a lungo l'erezione e il miglioramento della vostra vita sessuale."
+        "VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life." : "VPXL (Very Penis Extended Long) è un farmaco di alta qualità che è stato creato da specialisti farmacia per aumentare le dimensioni del pene. Esso agisce come ai falli circoncisi, come non circoncisi. fornitura mensile è di 60 pillole al mese. Si noterà risultati del primo mese di trattamento. Prendendo VPXL per almeno 4 mesi si ottiene aumentando di dimensioni del pene, più duro e più a lungo l'erezione e il miglioramento della vostra vita sessuale.",
+
+        "10 Bonus pills to your order" : "10 pillole bonus al vostro ordine",
+        "100% Satisfaction Guarantee" : "Garanzia 100% di soddisfazione",
+        "Bargain prices" : "Prezzi d'occasione",
+
+        "© 2001–2013. Herbalex. All rights reserved." : "© 2001-2013. Herbalex. Tutti i diritti riservati."
     },
     es : {
         "- 24/7 customer support service" : "- 24/7 servicio de soporte al cliente",
@@ -287,7 +311,13 @@ var lang = {
 
         "AyurSlim is an ayurvedic formulation of pure herbs used for the treatment of obesity " : "AyurSlim es una formulación ayurvédica de hierbas puras utilizadas para el tratamiento de la obesidad ",
 
-        "VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life." : "VPXL (Very Penis Extended Long) es una medicación de alta calidad que es creada por especialistas en farmacia para aumentar el tamaño del pene. Funciona tanto en el pene circuncidado como no circuncidado. El suministro mensual es de 60 pastillas por mes. Notará los resultados del primer mes de tratamiento. Tomando VPXL durante al menos 4 meses obtendrá aumento del tamaño del pene, erección más dura y más larga y mejora de su vida sexual."
+        "VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life." : "VPXL (Very Penis Extended Long) es una medicación de alta calidad que es creada por especialistas en farmacia para aumentar el tamaño del pene. Funciona tanto en el pene circuncidado como no circuncidado. El suministro mensual es de 60 pastillas por mes. Notará los resultados del primer mes de tratamiento. Tomando VPXL durante al menos 4 meses obtendrá aumento del tamaño del pene, erección más dura y más larga y mejora de su vida sexual.",
+
+        "10 Bonus pills to your order" : "10 pastillas de bonificación a su pedido",
+        "100% Satisfaction Guarantee" : "Garantía del 100% de la satisfacción",
+        "Bargain prices" : "Precios baratos",
+
+        "© 2001–2013. Herbalex. All rights reserved." : "© 2001-2013. Herbalex. Todos los derechos reservados."
     },
     pt : {
         "- 24/7 customer support service" : "- 24/7 o serviço de suporte ao cliente",
@@ -345,7 +375,13 @@ var lang = {
 
         "AyurSlim is an ayurvedic formulation of pure herbs used for the treatment of obesity " : "AyurSlim é uma formulação ayurvédica de ervas puras usadas para o tratamento da obesidade ",
 
-        "VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life." : "VPXL (Very Penis Extended Long) é uma medicação de alta qualidade que é criada por especialistas em farmácia para aumentar o tamanho do pénis. Ele funciona tanto em pênis circuncidado e não circuncidado. A oferta mensal é de 60 comprimidos por mês. Você notará os resultados do primeiro mês de tratamento. Tomando VPXL por pelo menos 4 meses você vai ter aumento do tamanho do pênis, mais dura e mais longa ereção e melhoria de sua vida sexual."
+        "VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life." : "VPXL (Very Penis Extended Long) é uma medicação de alta qualidade que é criada por especialistas em farmácia para aumentar o tamanho do pénis. Ele funciona tanto em pênis circuncidado e não circuncidado. A oferta mensal é de 60 comprimidos por mês. Você notará os resultados do primeiro mês de tratamento. Tomando VPXL por pelo menos 4 meses você vai ter aumento do tamanho do pênis, mais dura e mais longa ereção e melhoria de sua vida sexual.",
+
+        "10 Bonus pills to your order" : "10 Bonus pills para o seu pedido",
+        "100% Satisfaction Guarantee" : "Garantia de satisfação de 100%",
+        "Bargain prices" : "Preços baratos",
+
+        "© 2001–2013. Herbalex. All rights reserved." : "© 2001-2013. Herbalex. Todos os direitos reservados."
     },
     jp : {
         "- 24/7 customer support service" : "- 24時間365日の顧客サポートサービス",
@@ -405,6 +441,12 @@ var lang = {
 
         "AyurSlim is an ayurvedic formulation of pure herbs used for the treatment of obesity " : "AyurSlimは、肥満の治療に使用される純粋なハーブのアーユルヴェーダ製剤です ",
 
-        "VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life." : "VPXL（Very Penis Extended Long）は、陰茎のサイズを増やすために薬局の専門家によって作成された高品質の薬です。 それは、割礼を受けた陰茎と陰茎以外の陰茎の両方に作用します。 毎月の供給量は1ヶ月あたり60錠です。 あなたは治療の最初の月からの結果に気付くでしょう。 VPXLを少なくとも4ヶ月間服用すると、陰茎の大きさが増し、セックスライフの勃起と改善がより困難になります。"
+        "VPXL (Very Penis Extended Long) is a high-quality medication which is created by pharmacy specialists for increasing penis size. It works on both circumcised and non circumcised penis. Monthly supply is 60 pills per month. You will notice results from the first month of treatment. Taking VPXL for at least 4 months you will get increasing of penis size, harder and longer erection and improvement of your sex life." : "VPXL（Very Penis Extended Long）は、陰茎のサイズを増やすために薬局の専門家によって作成された高品質の薬です。 それは、割礼を受けた陰茎と陰茎以外の陰茎の両方に作用します。 毎月の供給量は1ヶ月あたり60錠です。 あなたは治療の最初の月からの結果に気付くでしょう。 VPXLを少なくとも4ヶ月間服用すると、陰茎の大きさが増し、セックスライフの勃起と改善がより困難になります。",
+
+        "10 Bonus pills to your order" : "あなたの注文に10のボーナスピル",
+        "100% Satisfaction Guarantee" : "100％満足保証",
+        "Bargain prices" : "バーゲン特価",
+
+        "© 2001–2013. Herbalex. All rights reserved." : "©2001-2013。 ハーバネックス。 全著作権所有。"
     }
 };

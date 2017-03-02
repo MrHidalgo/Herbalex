@@ -33,6 +33,12 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 		flex-flow: row wrap;
 		align-items: center;
 		justify-content: space-between;
+
+		.footer__menu & {
+			@include mixinDimensions($w-all, 60px);
+			right: 0;
+			justify-content: center;
+		}
 	}
 
 
@@ -57,15 +63,19 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 
 	&__pointer {
 		display: none;
-		margin: {
-			left: 15px;
-		}
-		height: 25px;
-		@include respond-to(large) {
-			display: inline-block;  *display: inline;  *zoom: 1;
-		}
-		@include respond-to(small-max) {
-			display: inline-block;  *display: inline;  *zoom: 1;
+
+
+		.header & {
+			margin: {
+				left: 15px;
+			}
+			height: 25px;
+			@include respond-to(large) {
+				display: inline-block;  *display: inline;  *zoom: 1;
+			}
+			@include respond-to(small-max) {
+				display: inline-block;  *display: inline;  *zoom: 1;
+			}
 		}
 
 
