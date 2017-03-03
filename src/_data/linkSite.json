@@ -1,47 +1,62 @@
 {
   "styleLinkIndex" : [
     "./style/fonts.min.css",
+    "./style/base.min.css",
     "./style/common.min.css"
   ],
 
   "styleLinkCategory" : [
     "./style/fonts.min.css",
+    "./style/base.min.css",
     "./style/category.min.css"
   ],
 
   "styleLinkFaq" : [
     "./style/fonts.min.css",
+    "./style/base.min.css",
     "./style/faq.min.css"
   ],
 
   "styleLinkPolicies" : [
     "./style/fonts.min.css",
+    "./style/base.min.css",
     "./style/policies.min.css"
   ],
 
   "styleLinkAbout" : [
     "./style/fonts.min.css",
+    "./style/base.min.css",
     "./style/about.min.css"
   ],
 
   "styleLinkContact" : [
     "./style/fonts.min.css",
+    "./style/base.min.css",
     "./style/contact.min.css"
   ],
 
   "styleLinkReport" : [
     "./style/fonts.min.css",
+    "./style/base.min.css",
     "./style/report.min.css"
   ],
 
   "styleLinkUnsubscribe" : [
     "./style/fonts.min.css",
+    "./style/base.min.css",
     "./style/unsubscribe.min.css"
   ],
 
   "styleLinkTrack" : [
     "./style/fonts.min.css",
+    "./style/base.min.css",
     "./style/track.min.css"
+  ],
+
+  "styleLinkProduct" : [
+    "./style/fonts.min.css",
+    "./style/base.min.css",
+    "./style/product.min.css"
   ],
 
   "scriptLink" : [

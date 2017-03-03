@@ -26,6 +26,7 @@ mixin rating(className)
        span.rating__text!= "Rating:"
        i.rating__icon
 
+//- BREADCRUMBS
 mixin breadcrumbs(arrName)
     .breadcrumbs
         .container.clearfix
@@ -41,6 +42,38 @@ mixin breadcrumbs(arrName)
                 )!= arrName[i]
                     if(i == arrName.length - 1)
                         i.breadcrumbs__btn-icon
+
+
+//- RANDOM BG
+mixin rowWithImageBgMain(className)
+    div(class="row " + className)
+        img(
+            src="./image/img-bg-left.png"
+            title=""
+            alt=""
+            class="row__img row__img-left"
+        )
+        img(
+            src="./image/img-bg-right.png"
+            title=""
+            alt=""
+            class="row__img row__img-right"
+        )
+//- RANDOM BG
+mixin rowWithImageBgProduct0(className)
+    div(class="row " + className)
+        img(
+            src="./image/img-bg-left-0.png"
+            title=""
+            alt=""
+            class="row__img row__img-left"
+        )
+        img(
+            src="./image/img-bg-right-1.png"
+            title=""
+            alt=""
+            class="row__img row__img-right"
+        )
 
 
 //- PRODUCT

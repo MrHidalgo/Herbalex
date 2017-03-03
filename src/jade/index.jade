@@ -1,4 +1,5 @@
 include _mixin/mixin
+include _mixin/macrosMixin
 
 
 doctype html
@@ -16,44 +17,32 @@ html(lang="en")
 
 
         //- ROW MAIN [background-image]
-        .row.row_main
-            img(
-                src="./image/img-bg-left.png"
-                title=""
-                alt=""
-                class="row__img row__img_main row__img_main-left"
-            )
-            img(
-                src="./image/img-bg-right.png"
-                title=""
-                alt=""
-                class="row__img row__img_main row__img_main-right"
-            )
+        +rowWithImageBgMain("row_main")
 
 
-            //- MAIN CONTENT IN PAGE
-            .row__wrap
+        //- MAIN CONTENT IN PAGE
+        .row__wrap
 
-                //- NAVIGATION [list, drop, coupon]
-                include ./_template/nav
+            //- NAVIGATION [list, drop, coupon]
+            include ./_template/nav
 
-                //- SLIDER
-                include ./_template/slider
+            //- SLIDER
+            include ./_template/slider
 
-                //- INFO
-                include ./_template/info
+            //- INFO
+            include ./_template/info
 
-                //- PRODUCT
-                include ./_template/product
+            //- PRODUCT
+            include ./_template/product
 
-                //- DESCRIPTION
-                include ./_template/description
+            //- DESCRIPTION
+            include ./_template/description
 
-                //- REVIEW
-                include ./_template/review
+            //- REVIEW
+            include ./_template/review
 
-                //- PROMO
-                include ./_template/promo
+            //- PROMO
+            include ./_template/promo
 
 
         //- HEADER [support, menu, search, logotype, language, currency, cart]

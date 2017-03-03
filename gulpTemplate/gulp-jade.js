@@ -48,10 +48,9 @@ var jadeOption = {
 };
 
 
-exports.jadeMainTask = function (taskName) {
+exports.jadeMainTask = function (taskName, srcFiles) {
 
-    var srcFiles    = './src/jade/**.jade',
-        distFolder  = './dist/';
+    var distFolder  = './dist/';
 
     return gulp.task(taskName, function() {
 

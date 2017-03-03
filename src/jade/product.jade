@@ -5,7 +5,7 @@ include _mixin/macrosMixin
 -
     var breadcrumbsLink = [
         "Main",
-        "Men’s Health"
+        "Product"
     ];
 
 
@@ -13,7 +13,7 @@ doctype html
 html(lang="en")
 
 
-    +headSite("Herbalex category", linkSite.styleLinkCategory, "")
+    +headSite("Herbalex product", linkSite.styleLinkProduct, "")
 
 
     body(data-lang="en")
@@ -24,7 +24,7 @@ html(lang="en")
 
 
         //- ROW MAIN [background-image]
-        +rowWithImageBgMain("row_main")
+        +rowWithImageBgProduct0("row_product-0")
 
 
         //- MAIN CONTENT IN PAGE
@@ -36,8 +36,6 @@ html(lang="en")
             //- BREADCRUMBS
             +breadcrumbs(breadcrumbsLink)
 
-            //- CATEGORY
-            include ./_template/category
 
             //- OTHER PROPOSITION
             include ./_template/other-proposition
@@ -51,6 +49,7 @@ html(lang="en")
 
         //- HEADER [support, menu, search, logotype, language, currency, cart]
         include ./_template/footer
+
 
 
     - for(var i = 0; i < linkSite.scriptLink.length; i++)
