@@ -253,6 +253,12 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 
 	&_otherProp,
 	&_category,
+	&_faq,
+	&_policies,
+	&_about,
+	&_contact,
+	&_unsubscribe,
+	&_track,
 	&_review {
 		top: 2px;
 	}
@@ -260,6 +266,12 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 
 	&_bestSeller,
 	&_otherProp,
+	&_faq,
+	&_policies,
+	&_about,
+	&_contact,
+	&_unsubscribe,
+	&_track,
 	&_category {
 		.main__title-icon {
 			@include retina-sprite($sp-i-main-title-index-group);

@@ -277,12 +277,12 @@
 }
 
 
-.main__title_otherProp, .main__title_category, .main__title_review {
+.main__title_otherProp, .main__title_category, .main__title_faq, .main__title_policies, .main__title_about, .main__title_contact, .main__title_unsubscribe, .main__title_track, .main__title_review {
   top: 2px;
 }
 
 
-.main__title_bestSeller .main__title-icon, .main__title_otherProp .main__title-icon, .main__title_category .main__title-icon {
+.main__title_bestSeller .main__title-icon, .main__title_otherProp .main__title-icon, .main__title_faq .main__title-icon, .main__title_policies .main__title-icon, .main__title_about .main__title-icon, .main__title_contact .main__title-icon, .main__title_unsubscribe .main__title-icon, .main__title_track .main__title-icon, .main__title_category .main__title-icon {
   background-image: url(../image/sprite.png);
   background-position: -50px -40px;
   width: 39px;
@@ -291,7 +291,7 @@
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   
-  .main__title_bestSeller .main__title-icon, .main__title_otherProp .main__title-icon, .main__title_category .main__title-icon {
+  .main__title_bestSeller .main__title-icon, .main__title_otherProp .main__title-icon, .main__title_faq .main__title-icon, .main__title_policies .main__title-icon, .main__title_about .main__title-icon, .main__title_contact .main__title-icon, .main__title_unsubscribe .main__title-icon, .main__title_track .main__title-icon, .main__title_category .main__title-icon {
     background-image: url(../image/sprite@2x.png);
     -webkit-background-size: 202px 197px;
             background-size: 202px 197px;
@@ -2925,7 +2925,7 @@ input.coupon__wrap-input::placeholder {
 
 .product__box {
   float: left;
-  width: 268.5px;
+  width: 269.5px;
   padding-top: 0;
   padding-bottom: 20px;
   padding-left: 10px;

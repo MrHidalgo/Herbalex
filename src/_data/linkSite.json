@@ -9,6 +9,41 @@
     "./style/category.min.css"
   ],
 
+  "styleLinkFaq" : [
+    "./style/fonts.min.css",
+    "./style/faq.min.css"
+  ],
+
+  "styleLinkPolicies" : [
+    "./style/fonts.min.css",
+    "./style/policies.min.css"
+  ],
+
+  "styleLinkAbout" : [
+    "./style/fonts.min.css",
+    "./style/about.min.css"
+  ],
+
+  "styleLinkContact" : [
+    "./style/fonts.min.css",
+    "./style/contact.min.css"
+  ],
+
+  "styleLinkReport" : [
+    "./style/fonts.min.css",
+    "./style/report.min.css"
+  ],
+
+  "styleLinkUnsubscribe" : [
+    "./style/fonts.min.css",
+    "./style/unsubscribe.min.css"
+  ],
+
+  "styleLinkTrack" : [
+    "./style/fonts.min.css",
+    "./style/track.min.css"
+  ],
+
   "scriptLink" : [
     "./vendor/js/jquery-1.11.1.min.js",
     "./script/language.min.js",

@@ -20,14 +20,23 @@ app.use('/product',     express.static('./dist/', {
 app.use('/track',       express.static('./dist/', {
         'index' : 'track.html'
 }));
-app.use('/support',     express.static('./dist/', {
-        'index' : 'support.html'
+app.use('/about',     express.static('./dist/', {
+        'index' : 'about.html'
 }));
 app.use('/policies',    express.static('./dist/', {
         'index' : 'policies.html'
 }));
 app.use('/faq',         express.static('./dist/', {
         'index' : 'faq.html'
+}));
+app.use('/contact',         express.static('./dist/', {
+        'index' : 'contact.html'
+}));
+app.use('/report',         express.static('./dist/', {
+        'index' : 'report.html'
+}));
+app.use('/unsubscribe',         express.static('./dist/', {
+        'index' : 'unsubscribe.html'
 }));
 
 
