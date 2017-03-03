@@ -1,0 +1,18 @@
+include ../_mixin/macrosMixin
+
+
+.specification
+    .container
+        .specification__row.clearfix
+            +mainTitle("Acai Berry |<span class='main__title-text_color'> Weight loss</span>", "main__title_specification")
+
+            .specification__row-info
+                p.specification__today!= "Today bought: <span class='specification__today_color'>313</span>"
+                p.specification__last!= "Last time bought in 12:36 pm"
+
+        .specification__row.specification__wrap
+
+            include ./_macros/_specification/specification-description
+
+            include ./_macros/_specification/specification-box
+

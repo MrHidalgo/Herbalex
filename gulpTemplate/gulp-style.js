@@ -58,9 +58,10 @@ var renameOption = {
 };
 
 /* outputStyle : [expanded, compact, nested, compressed] */
-exports.styleMainTask = function(taskName, srcFiles) {
+exports.styleMainTask = function(taskName) {
 
-    var distFolder  = './dist/style/';
+    var srcFiles    = './src/scss/**.scss',
+        distFolder  = './dist/style/';
 
     return gulp.task(taskName, function() {
 

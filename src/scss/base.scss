@@ -17,6 +17,8 @@ $c-nobel    	      : return-value(color, nobel);
 $c-nero     	      : return-value(color, nero);
 $c-azure     	      : return-value(color, azure);
 $c-light-blue	      : return-value(color, light-blue);
+$c-persimmon	      : return-value(color, persimmon);
+$c-solitude		      : return-value(color, solitude);
 
 $f-OS-bold          : return-value(fonts, OS-bold);
 ///
@@ -165,7 +167,6 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 		family: $f-OS-bold;
 	}
 	text-align: center;
-	transition: .3s ease-in-out;
 
 
 	&:hover {
@@ -174,7 +175,6 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 		background: -webkit-linear-gradient(top,  rgba(230,234,238,1) 0%,rgba(220,220,220,1) 100%);
 		background: linear-gradient(to bottom,  rgba(230,234,238,1) 0%,rgba(220,220,220,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6eaee', endColorstr='#dcdcdc',GradientType=0 );
-		transition: .3s ease-in-out;
 
 
 		.btn__text {
@@ -210,6 +210,32 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 
 	&_small {
 		width: 150px;
+	}
+
+
+	&_extra-big {
+		@include mixinDimensions(400px, 45px);
+		line-height: 40px;
+		@include respond-to(large-max) {
+			width: 300px;
+		}
+		@include respond-to(small-max) {
+			width: 250px;
+		}
+
+
+		.btn__text {
+			font-size: 26px;
+			@include respond-to(large-max) {
+				font-size: 22px;
+			}
+			@include respond-to(small-max) {
+				font-size: 18px;
+			}
+		}
+		.btn__icon {
+			@include retina-sprite($sp-i-btn-extra-arr-group);
+		}
 	}
 
 
@@ -257,6 +283,7 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 	&_contact,
 	&_unsubscribe,
 	&_track,
+	&_specification,
 	&_review {
 		top: 2px;
 	}
@@ -270,6 +297,7 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 	&_contact,
 	&_unsubscribe,
 	&_track,
+	&_specification,
 	&_category {
 		.main__title-icon {
 			@include retina-sprite($sp-i-main-title-index-group);
@@ -278,6 +306,11 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 	&_review {
 		.main__title-icon {
 			@include retina-sprite($sp-i-review-group);
+		}
+	}
+	&_specification {
+		.main__title-text {
+			color: $c-persimmon;
 		}
 	}
 
@@ -299,12 +332,29 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 		@include respond-to(small-max) {
 			font-size: 18px;
 		}
+
+
+		&_color {
+			font-size: 14px;
+			color: $c-dim-gray;
+			vertical-align: middle;
+		}
 	}
 }
 ///
 /// RATING
 ///
 .rating {
+	&_big {
+		.rating__text {
+			font-size: 13px;
+		}
+		.rating__icon {
+			@include retina-sprite($sp-i-rating-big-group);
+		}
+	}
+
+
 	&__text {
 		font-size: 11px;
 		color: $c-nobel;
@@ -384,5 +434,16 @@ $f-OS-bold          : return-value(fonts, OS-bold);
 			right: -7px;
 			@include retina-sprite($sp-i-breadcrumbs-corner-group);
 		}
+	}
+}
+///
+/// BORDER
+///
+.border {
+	&_top {
+		border-top: 1px solid $c-solitude;
+	}
+	&_bottom {
+		border-bottom: 1px solid $c-solitude;
 	}
 }

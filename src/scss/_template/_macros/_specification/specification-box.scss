@@ -1,0 +1,63 @@
+///
+/// IMPORT FILES
+///
+@import "../../../_mixin/mixin";
+@import "../../../_function/function";
+@import "../../../_variable/sprite";
+///
+/// DECLARATION VARIABLE
+///
+$w-all              : return-value(dimension, all);
+
+$c-white			      : return-value(color, white);
+$c-persimmon	      : return-value(color, persimmon);
+$c-snow     	      : return-value(color, snow);
+$c-nero     	      : return-value(color, nero);
+
+$f-OS-bold          : return-value(fonts, OS-bold);
+$f-MS-bold          : return-value(fonts, MS-bold);
+///
+/// MAIN
+///
+.specification {
+	&__box {
+		background-color: $c-snow;
+		padding: 30px;
+		@include respond-to(small-max) {
+			padding: 15px;
+		}
+
+
+		&:first-child {
+			border-bottom: 0;
+		}
+
+
+		&-title {
+			font: {
+				size: 35px;
+				family: $f-MS-bold;
+			};
+			color: $c-nero;
+			padding-bottom: 20px;
+			@include respond-to(small-max) {
+				font-size: 24px;
+				padding-bottom: 15px;
+			}
+
+
+			&_color {
+				color: $c-persimmon;
+			}
+		}
+
+
+		&-text {
+			font-size: 12px;
+			line-height: 1.6;
+			@include respond-to(small-max) {
+				line-height: 1.4;
+			}
+		}
+	}
+}

@@ -39,7 +39,7 @@
 @media (max-width: 767px) {
   
   .container {
-    min-width: 300px;
+    min-width: 290px;
     max-width: 420px;
   }
 }
@@ -468,7 +468,7 @@ input[type="radio"] {
   *display: inline;
   *zoom: 1;
   background-image: url(../image/sprite.png);
-  background-position: -103px -68px;
+  background-position: -111px -85px;
   width: 20px;
   height: 6px;
 }
@@ -477,8 +477,8 @@ input[type="radio"] {
   
   .menu__pointer-icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -512,8 +512,8 @@ input[type="radio"] {
   
   .logotype__icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -532,8 +532,8 @@ input[type="radio"] {
   
   .logotype__shadow {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -586,8 +586,8 @@ input[type="radio"] {
   
   .cart__shadow {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -613,8 +613,8 @@ input[type="radio"] {
   
   .cart__icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -810,7 +810,7 @@ input[type="radio"] {
   display: inline-block;
   margin-top: 11px;
   background-image: url(../image/sprite.png);
-  background-position: -137px -85px;
+  background-position: -207px -28px;
   width: 13px;
   height: 15px;
 }
@@ -819,8 +819,8 @@ input[type="radio"] {
   
   .cart__drop-delete-icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -922,7 +922,7 @@ input[type="radio"] {
 .cart__drop-apply .btn__icon {
   margin-left: 0;
   background-image: url(../image/sprite.png);
-  background-position: -143px -158px;
+  background-position: -207px -108px;
   width: 10px;
   height: 8px;
 }
@@ -931,8 +931,8 @@ input[type="radio"] {
   
   .cart__drop-apply .btn__icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -986,7 +986,7 @@ input[type="radio"] {
   *zoom: 1;
   vertical-align: middle;
   background-image: url(../image/sprite.png);
-  background-position: -181px -149px;
+  background-position: -207px -161px;
   width: 6px;
   height: 4px;
 }
@@ -995,8 +995,8 @@ input[type="radio"] {
   
   .currency__icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -1051,7 +1051,7 @@ input[type="radio"] {
 
 .language__icon {
   background-image: url(../image/sprite.png);
-  background-position: -181px -149px;
+  background-position: -207px -161px;
   width: 6px;
   height: 4px;
 }
@@ -1060,8 +1060,8 @@ input[type="radio"] {
   
   .language__icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -1088,7 +1088,7 @@ input[type="radio"] {
 
 [data-language=en] .language__flags {
   background-image: url(../image/sprite.png);
-  background-position: -60px -114px;
+  background-position: -139px -114px;
   width: 26px;
   height: 16px;
 }
@@ -1097,15 +1097,15 @@ input[type="radio"] {
   
   [data-language=en] .language__flags {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
 
 [data-language=de] .language__flags {
   background-image: url(../image/sprite.png);
-  background-position: 0px -137px;
+  background-position: -108px -114px;
   width: 26px;
   height: 16px;
 }
@@ -1114,15 +1114,15 @@ input[type="radio"] {
   
   [data-language=de] .language__flags {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
 
 [data-language=fr] .language__flags {
   background-image: url(../image/sprite.png);
-  background-position: -122px -114px;
+  background-position: -31px -140px;
   width: 26px;
   height: 16px;
 }
@@ -1131,15 +1131,15 @@ input[type="radio"] {
   
   [data-language=fr] .language__flags {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
 
 [data-language=it] .language__flags {
   background-image: url(../image/sprite.png);
-  background-position: -29px -114px;
+  background-position: -62px -140px;
   width: 26px;
   height: 16px;
 }
@@ -1148,15 +1148,15 @@ input[type="radio"] {
   
   [data-language=it] .language__flags {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
 
 [data-language=es] .language__flags {
   background-image: url(../image/sprite.png);
-  background-position: -91px -114px;
+  background-position: 0px -140px;
   width: 26px;
   height: 16px;
 }
@@ -1165,15 +1165,15 @@ input[type="radio"] {
   
   [data-language=es] .language__flags {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
 
 [data-language=pt] .language__flags {
   background-image: url(../image/sprite.png);
-  background-position: -31px -137px;
+  background-position: -124px -140px;
   width: 26px;
   height: 16px;
 }
@@ -1182,15 +1182,15 @@ input[type="radio"] {
   
   [data-language=pt] .language__flags {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
 
 [data-language=jp] .language__flags {
   background-image: url(../image/sprite.png);
-  background-position: -62px -137px;
+  background-position: -93px -140px;
   width: 26px;
   height: 16px;
 }
@@ -1199,8 +1199,8 @@ input[type="radio"] {
   
   [data-language=jp] .language__flags {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -1269,8 +1269,8 @@ input[type="radio"] {
   
   .search::before {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -1287,8 +1287,8 @@ input[type="radio"] {
   
   .search::after {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -1370,7 +1370,7 @@ input[type="radio"] {
   *zoom: 1;
   margin-top: 11px;
   background-image: url(../image/sprite.png);
-  background-position: -41px -158px;
+  background-position: -48px -161px;
   width: 16px;
   height: 16px;
 }
@@ -1379,8 +1379,8 @@ input[type="radio"] {
   
   .search__btn-icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -1388,7 +1388,7 @@ input[type="radio"] {
 .active .search__btn-icon {
   margin-top: 14px;
   background-image: url(../image/sprite.png);
-  background-position: 0px -186px;
+  background-position: -207px -77px;
   width: 11px;
   height: 11px;
 }
@@ -1397,8 +1397,8 @@ input[type="radio"] {
   
   .active .search__btn-icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -1790,8 +1790,8 @@ input.search__input::placeholder {
   
   .coupon__row-info .coupon__icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -1817,8 +1817,8 @@ input.search__input::placeholder {
   
   .coupon__row-done .coupon__icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -2013,7 +2013,7 @@ input.search__input::placeholder {
 
 .coupon__wrap-error .btn__icon {
   background-image: url(../image/sprite.png);
-  background-position: -153px -114px;
+  background-position: -155px -140px;
   width: 19px;
   height: 16px;
 }
@@ -2022,8 +2022,8 @@ input.search__input::placeholder {
   
   .coupon__wrap-error .btn__icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -2251,7 +2251,7 @@ input.coupon__wrap-input::placeholder {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   background-image: url(../image/sprite.png);
-  background-position: -157px -65px;
+  background-position: -207px -147px;
   width: 5px;
   height: 9px;
 }
@@ -2260,8 +2260,8 @@ input.coupon__wrap-input::placeholder {
   
   .nav__drop-btn:hover .nav__drop-btn-icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -2278,7 +2278,7 @@ input.coupon__wrap-input::placeholder {
   top: 13px;
   right: 10px;
   background-image: url(../image/sprite.png);
-  background-position: -169px -94px;
+  background-position: -207px -133px;
   width: 5px;
   height: 9px;
 }
@@ -2287,8 +2287,8 @@ input.coupon__wrap-input::placeholder {
   
   .nav__drop-btn-icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -2400,7 +2400,7 @@ input.coupon__wrap-input::placeholder {
 
 .nav__all.active .nav__all-icon {
   background-image: url(../image/sprite.png);
-  background-position: -104px -158px;
+  background-position: -111px -161px;
   width: 14px;
   height: 10px;
   width: 16px;
@@ -2410,8 +2410,8 @@ input.coupon__wrap-input::placeholder {
   
   .nav__all.active .nav__all-icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -2425,7 +2425,7 @@ input.coupon__wrap-input::placeholder {
 .nav__all-icon {
   margin-right: 10px;
   background-image: url(../image/sprite.png);
-  background-position: -83px -158px;
+  background-position: -90px -161px;
   width: 16px;
   height: 13px;
 }
@@ -2434,8 +2434,8 @@ input.coupon__wrap-input::placeholder {
   
   .nav__all-icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -2555,7 +2555,7 @@ input.coupon__wrap-input::placeholder {
 
 .product__container:hover .product__price-btn .btn__icon {
   background-image: url(../image/sprite.png);
-  background-position: -123px -158px;
+  background-position: -102px -98px;
   width: 15px;
   height: 9px;
 }
@@ -2564,8 +2564,8 @@ input.coupon__wrap-input::placeholder {
   
   .product__container:hover .product__price-btn .btn__icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -2747,7 +2747,7 @@ input.coupon__wrap-input::placeholder {
   top: 50%;
   margin-top: -7px;
   background-image: url(../image/sprite.png);
-  background-position: -62px -158px;
+  background-position: -69px -161px;
   width: 16px;
   height: 14px;
 }
@@ -2756,8 +2756,8 @@ input.coupon__wrap-input::placeholder {
   
   .review_left-corner {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -2886,7 +2886,7 @@ input.coupon__wrap-input::placeholder {
 
 .promo__list-icon--0 {
   background-image: url(../image/sprite.png);
-  background-position: -110px -85px;
+  background-position: -52px -114px;
   width: 22px;
   height: 20px;
 }
@@ -2895,15 +2895,15 @@ input.coupon__wrap-input::placeholder {
   
   .promo__list-icon--0 {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
 
 .promo__list-icon--1 {
   background-image: url(../image/sprite.png);
-  background-position: 0px -114px;
+  background-position: -79px -114px;
   width: 24px;
   height: 18px;
 }
@@ -2912,15 +2912,15 @@ input.coupon__wrap-input::placeholder {
   
   .promo__list-icon--1 {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
 
 .promo__list-icon--2 {
   background-image: url(../image/sprite.png);
-  background-position: -181px -101px;
+  background-position: -181px -131px;
   width: 18px;
   height: 20px;
 }
@@ -2929,15 +2929,15 @@ input.coupon__wrap-input::placeholder {
   
   .promo__list-icon--2 {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
 
 .promo__list-icon--3 {
   background-image: url(../image/sprite.png);
-  background-position: -181px -126px;
+  background-position: 0px -161px;
   width: 20px;
   height: 18px;
 }
@@ -2946,30 +2946,13 @@ input.coupon__wrap-input::placeholder {
   
   .promo__list-icon--3 {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
 
 .promo__list-icon--4 {
-  background-image: url(../image/sprite.png);
-  background-position: -181px -25px;
-  width: 21px;
-  height: 20px;
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  
-  .promo__list-icon--4 {
-    background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
-  }
-}
-
-
-.promo__list-icon--5 {
   background-image: url(../image/sprite.png);
   background-position: -181px 0px;
   width: 21px;
@@ -2978,10 +2961,27 @@ input.coupon__wrap-input::placeholder {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   
+  .promo__list-icon--4 {
+    background-image: url(../image/sprite@2x.png);
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
+  }
+}
+
+
+.promo__list-icon--5 {
+  background-image: url(../image/sprite.png);
+  background-position: -181px -25px;
+  width: 21px;
+  height: 20px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  
   .promo__list-icon--5 {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -2997,15 +2997,15 @@ input.coupon__wrap-input::placeholder {
   
   .promo__list-icon--6 {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
 
 .promo__list-icon--7 {
   background-image: url(../image/sprite.png);
-  background-position: 0px -158px;
+  background-position: -207px 0px;
   width: 13px;
   height: 23px;
 }
@@ -3014,8 +3014,8 @@ input.coupon__wrap-input::placeholder {
   
   .promo__list-icon--7 {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 
@@ -3156,7 +3156,7 @@ input.coupon__wrap-input::placeholder {
   bottom: 8px;
   right: -25px;
   background-image: url(../image/sprite.png);
-  background-position: -123px -137px;
+  background-position: -58px -98px;
   width: 19px;
   height: 9px;
 }
@@ -3165,8 +3165,8 @@ input.coupon__wrap-input::placeholder {
   
   .payment__title-icon {
     background-image: url(../image/sprite@2x.png);
-    -webkit-background-size: 202px 197px;
-            background-size: 202px 197px;
+    -webkit-background-size: 220px 179px;
+            background-size: 220px 179px;
   }
 }
 

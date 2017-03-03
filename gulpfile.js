@@ -10,6 +10,7 @@ var gulp            =   require('gulp')
 
 /* GULP PATH [module] */
 var command         =   require('./gulpTemplate/gulp-command.js')
+    , task          =   require('./gulpTemplate/gulp-image.js')
     , taskStyle     =   require('./gulpTemplate/gulp-style.js')
     , taskJade      =   require('./gulpTemplate/gulp-jade.js')
     , taskJs        =   require('./gulpTemplate/gulp-js.js')
@@ -19,6 +20,8 @@ var command         =   require('./gulpTemplate/gulp-command.js')
 
 
 
+taskJade.jadeMainTask(command.buildJade);
+taskStyle.styleMainTask(command.buildScss);
 taskJs.mainScriptTask(command.buildScript);
 taskSprite.imageSprites(command.sprites);
 taskImage.mainImageTask(command.buildImg);
@@ -44,20 +47,10 @@ gulp.task(command.watch, function() {
     var srcWatchICON = ['./src/icons/**.png'];
     var srcWatchIMG  = ['./src/image/*'];
 
-    var watcherScss = gulp.watch(srcWatchSCSS);
-    var watcherJade = gulp.watch(srcWatchJADE);
 
-    watcherScss.on('change', function(event) {
-        // console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
-        taskStyle.styleMainTask(command.buildScss, event.path);
+    watch(srcWatchSCSS, function () {
         gulp.start(command.buildScss);
     });
-    watcherJade.on('change', function(event) {
-        // console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
-        taskJade.jadeMainTask(command.buildJade, event.path);
-        gulp.start(command.buildJade);
-    });
-
     watch(srcWatchJADE, function() {
         gulp.start(command.buildJade);
     });
