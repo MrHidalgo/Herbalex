@@ -26,6 +26,22 @@ mixin rating(className)
        span.rating__text!= "Rating:"
        i.rating__icon
 
+mixin breadcrumbs(arrName)
+    .breadcrumbs
+        .container.clearfix
+            a(
+                href="/"
+                class="breadcrumbs__btn"
+            )
+                i.breadcrumbs__btn-icon
+            - for(var i = 0; i < arrName.length; i++)
+                a(
+                    href="javascript:void(0);"
+                    class="breadcrumbs__btn"
+                )!= arrName[i]
+                    if(i == arrName.length - 1)
+                        i.breadcrumbs__btn-icon
+
 
 //- PRODUCT
 mixin productBlock(productNameArr, productCategoryArr, ratingClassName)

@@ -1,0 +1,70 @@
+include _mixin/mixin
+include _mixin/macrosMixin
+
+
+-
+    var breadcrumbsLink = [
+        "Main",
+        "Men’s Health"
+    ];
+
+
+doctype html
+html(lang="en")
+
+
+    +headSite("Herbalex category", linkSite.styleLinkCategory, "")
+
+
+    body(data-lang="en")
+
+
+        //- HEADER [support, menu, search, logotype, language, currency, cart]
+        include ./_template/header
+
+
+        //- ROW MAIN [background-image]
+        .row.row_main
+            img(
+                src="./image/img-bg-left.png"
+                title=""
+                alt=""
+                class="row__img row__img_main row__img_main-left"
+            )
+            img(
+                src="./image/img-bg-right.png"
+                title=""
+                alt=""
+                class="row__img row__img_main row__img_main-right"
+            )
+
+
+            //- MAIN CONTENT IN PAGE
+            .row__wrap
+
+                //- NAVIGATION [list, drop, coupon]
+                include ./_template/nav
+
+                //- BREADCRUMBS
+                +breadcrumbs(breadcrumbsLink)
+
+                //- CATEGORY
+                include ./_template/category
+
+                //- OTHER PROPOSITION
+                include ./_template/other-proposition
+
+                //- REVIEW
+                include ./_template/review
+
+                //- PROMO
+                include ./_template/promo
+
+
+        //- HEADER [support, menu, search, logotype, language, currency, cart]
+        include ./_template/footer
+
+
+
+    - for(var i = 0; i < linkSite.scriptLink.length; i++)
+        script(src= linkSite.scriptLink[i])

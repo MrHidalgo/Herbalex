@@ -1,0 +1,48 @@
+include ../_mixin/macrosMixin
+
+-
+    var  productName = [
+        "Rumalaya Liniment",
+        "Himcolin Gel",
+        "Confido",
+        "VIM-25",
+        "Rumalaya Liniment",
+        "Himcolin Gel",
+        "Confido",
+        "VIM-25",
+        "Rumalaya Liniment",
+        "Himcolin Gel",
+        "Confido",
+        "VIM-25",
+        "Rumalaya Liniment",
+        "Himcolin Gel",
+        "Confido",
+        "VIM-25"
+    ];
+    var  productCategory = [
+        "Erectile Dysfunction",
+        "Women's Health",
+        "Weight Loss",
+        "Gastrointestinal",
+        "Erectile Dysfunction",
+        "Women's Health",
+        "Weight Loss",
+        "Gastrointestinal",
+        "Erectile Dysfunction",
+        "Women's Health",
+        "Weight Loss",
+        "Gastrointestinal",
+        "Erectile Dysfunction",
+        "Women's Health",
+        "Weight Loss",
+        "Gastrointestinal"
+    ];
+
+
+.category
+    .container
+        .category__row.clearfix
+            +mainTitle("Men’s Health", "main__title_category")
+
+        .category__row.clearfix
+            +productBlock(productName, productCategory, "product__rating-wrap")

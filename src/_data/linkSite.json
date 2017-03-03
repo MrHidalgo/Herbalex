@@ -1,7 +1,12 @@
 {
-  "styleLink" : [
+  "styleLinkIndex" : [
     "./style/fonts.min.css",
     "./style/common.min.css"
+  ],
+
+  "styleLinkCategory" : [
+    "./style/fonts.min.css",
+    "./style/category.min.css"
   ],
 
   "scriptLink" : [

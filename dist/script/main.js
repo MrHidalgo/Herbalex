@@ -38,7 +38,7 @@ function appendDOMItem(wMenuWrap, cMenuItem, wContainer) {
 
         var lastElementMenu = $(".header .menu > .menu__btn").last();
 
-        $(".menu__drop").prepend(lastElementMenu);
+        $(".header .menu__drop").prepend(lastElementMenu);
     } else {
         return false;
     }
@@ -85,7 +85,7 @@ function less(nWords, className) {
 $(window).on("load resize ready scroll", function(){
     var firstCheck          = ($(window).width() > '990' && $(window).width() < '1200'),
         secondCheck         = ($(window).width() > '300' && $(window).width() < '768'),
-        widthContainerAll   = $(".container").width(),
+        widthContainerAll   = $(".header .container").width(),
         widthContainerHalf  = widthContainerAll / 2;
 
     if(firstCheck) {
@@ -94,10 +94,10 @@ $(window).on("load resize ready scroll", function(){
     else if (secondCheck) {
         checkMenuMobile(widthContainerAll);
     } else {
-        var dropItem = $(".menu__drop .menu__btn");
+        var dropItem = $(".header .menu__drop .menu__btn");
 
-        $(".menu__pointer").before(dropItem);
-        $(".menu__drop").hide();
+        $(".header .menu__pointer").before(dropItem);
+        $(".header .menu__drop").hide();
     }
 });
 
